@@ -17,3 +17,15 @@ C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica_Git\Mecanica.App\Me
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica_Git\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica_Git\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.AssemblyInfoInputs.cache
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica_Git\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.AssemblyInfo.cs
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\bin\Debug\netstandard2.0\Mecanica.App.deps.json
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\bin\Debug\netstandard2.0\Mecanica.App.dll
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\bin\Debug\netstandard2.0\Mecanica.App.pdb
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.csprojAssemblyReference.cache
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.AssemblyInfoInputs.cache
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.AssemblyInfo.cs
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.csproj.CoreCompileInputs.cache
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.dll
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.pdb

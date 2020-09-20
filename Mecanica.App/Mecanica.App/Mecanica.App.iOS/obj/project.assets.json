@@ -2567,24 +2567,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Filipe\\.nuget\\packages\\": {},
+    "C:\\Users\\Victor\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica_Git\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\Mecanica.App.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\Mecanica.App.iOS.csproj",
       "projectName": "Mecanica.App.iOS",
-      "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica_Git\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\Mecanica.App.iOS.csproj",
-      "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica_Git\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\Mecanica.App.iOS.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2598,8 +2598,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica_Git\\Mecanica.App\\Mecanica.App\\Mecanica.App\\Mecanica.App.csproj": {
-              "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica_Git\\Mecanica.App\\Mecanica.App\\Mecanica.App\\Mecanica.App.csproj"
+            "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.App\\Mecanica.App\\Mecanica.App\\Mecanica.App.csproj": {
+              "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.App\\Mecanica.App\\Mecanica.App\\Mecanica.App.csproj"
             }
           }
         }

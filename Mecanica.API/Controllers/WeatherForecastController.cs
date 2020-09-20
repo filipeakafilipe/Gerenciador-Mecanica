@@ -30,7 +30,7 @@ namespace Mecanica.API.Controllers
         {
             // EXEMPLO DE COMO UTILIZAR O BD
             var unidade = new UnidadeDeTrabalho();
-            unidade.SLARepositorio.Adicionar(new SLA() { Nome = "ASRJASERIAHSIEAH" });
+            unidade.SLARepositorio.Adicionar(new SLA() { Nome = "Maconha" });
 
 
 
