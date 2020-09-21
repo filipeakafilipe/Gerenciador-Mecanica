@@ -5653,11 +5653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Grupo 7 - LDSI\\Grupo%207%20-%20LDSI\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
+      "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
       "projectName": "Mecanica.Repositorios",
-      "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Grupo 7 - LDSI\\Grupo%207%20-%20LDSI\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
+      "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
       "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Grupo 7 - LDSI\\Grupo%207%20-%20LDSI\\Mecanica.Repositorios\\obj\\",
+      "outputPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica\\Mecanica.Repositorios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5678,8 +5678,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Grupo 7 - LDSI\\Grupo%207%20-%20LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
-              "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Grupo 7 - LDSI\\Grupo%207%20-%20LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
+            "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
+              "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
             }
           }
         }

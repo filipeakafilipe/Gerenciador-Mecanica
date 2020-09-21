@@ -12,7 +12,7 @@ namespace Mecanica.Repositorios
 
         }
 
-        public Perfil Get(Guid id)
+        public Perfil Get(int id)
         {
             return db.Perfils.Where(v => v.Id == id).FirstOrDefault();
         }
@@ -24,7 +24,7 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Remover(Guid id)
+        public void Remover(int id)
         {
             var perfil = db.Perfils.Where(v => v.Id == id).FirstOrDefault();
 
@@ -33,7 +33,7 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Atualizar(Guid id, Perfil novoPerfil)
+        public void Atualizar(int id, Perfil novoPerfil)
         {
             var perfil = Get(id);
 

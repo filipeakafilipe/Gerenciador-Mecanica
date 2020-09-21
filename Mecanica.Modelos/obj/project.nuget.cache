@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a8FAggbOdlDEQSrPSzBNbVdwAYv3Ooc/5Uijh2nDNYx+6/9av6p6uiiUb04iXA3/C142H0GVfOI4q+WF+NhR3A==",
+  "dgSpecHash": "aQTPO6tUYRdo50H5SIXWD65/jA/yF10qXG/Ny9atUmRISmofgClnKkgc61wfFN9+1tqK+n75R7dEw7HHCVWiPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Grupo 7 - LDSI\\Grupo%207%20-%20LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
+  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Filipe\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Filipe\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

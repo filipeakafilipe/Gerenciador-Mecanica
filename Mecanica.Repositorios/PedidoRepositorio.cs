@@ -12,7 +12,7 @@ namespace Mecanica.Repositorios
 
         }
 
-        public Pedido Get(Guid id)
+        public Pedido Get(int id)
         {
             return db.Pedidos.Where(v => v.Id == id).FirstOrDefault();
         }
@@ -24,7 +24,7 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Remover(Guid id)
+        public void Remover(int id)
         {
             var pedido = db.Pedidos.Where(v => v.Id == id).FirstOrDefault();
 
@@ -33,7 +33,7 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Atualizar(Guid id, Pedido novoPedido)
+        public void Atualizar(int id, Pedido novoPedido)
         {
             var pedido = Get(id);
 

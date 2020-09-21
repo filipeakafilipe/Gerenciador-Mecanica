@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "khLWrkafOdcLJ7C9z/D7NnrWoDsI7t0zBPetIjPhENaLCOSSYbviz5doqjvSevvkgBSXrhfm0gtTNfc6oQ/HKg==",
+  "dgSpecHash": "b/CTzTMfb9l78iKAqrbh51PDs3cEI4YuYdQxD2CCmXV7lY5Rii6GBIQqh2MrOimj4L0D0g7eoBiULMk1vscMFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Grupo 7 - LDSI\\Grupo%207%20-%20LDSI\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\Mecanica.App.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Mecanica\\Mecanica.App\\Mecanica.App\\Mecanica.App.iOS\\Mecanica.App.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Filipe\\.nuget\\packages\\dryioc.dll\\4.0.7\\dryioc.dll.4.0.7.nupkg.sha512",
     "C:\\Users\\Filipe\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0-beta2.20059.3\\microsoft.codeanalysis.analyzers.3.0.0-beta2.20059.3.nupkg.sha512",

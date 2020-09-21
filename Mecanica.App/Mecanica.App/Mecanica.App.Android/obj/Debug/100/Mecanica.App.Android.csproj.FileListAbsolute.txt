@@ -1119,3 +1119,17 @@ C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.A
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\Microsoft.CodeAnalysis.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\Microsoft.CodeAnalysis.pdb
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Buffers.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Collections.Immutable.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Memory.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Reflection.Metadata.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Text.Encoding.CodePages.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Text.Encoding.CodePages.pdb
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\System.Threading.Tasks.Extensions.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\Xamarin.Forms.HotReload.Reloader.dll
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Mecanica\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\android\assets\Xamarin.Forms.HotReload.Reloader.pdb

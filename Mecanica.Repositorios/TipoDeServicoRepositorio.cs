@@ -12,7 +12,7 @@ namespace Mecanica.Repositorios
 
         }
 
-        public TipoDeServico Get(Guid id)
+        public TipoDeServico Get(int id)
         {
             return db.TipoDeServicos.Where(v => v.Id == id).FirstOrDefault();
         }
@@ -24,7 +24,7 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Remover(Guid id)
+        public void Remover(int id)
         {
             var tipoDeServico = db.TipoDeServicos.Where(v => v.Id == id).FirstOrDefault();
 
@@ -33,7 +33,7 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Atualizar(Guid id, TipoDeServico novoTipoDeServico)
+        public void Atualizar(int id, TipoDeServico novoTipoDeServico)
         {
             var tipoDeServico = Get(id);
 
