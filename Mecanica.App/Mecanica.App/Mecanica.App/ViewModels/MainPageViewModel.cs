@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Xamarin.Forms;
 
 namespace Mecanica.App.ViewModels
 {
@@ -13,7 +14,16 @@ namespace Mecanica.App.ViewModels
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Main Page xx";
+
+            CriarPerfilCommand = new Command(() =>
+            {
+                var criarPerfilPage = new CriarPerfilPage();
+
+                navigationService.NavigateAsync("CriarPerfilPage");
+            });
         }
+
+        public Command CriarPerfilCommand { get; }
     }
 }

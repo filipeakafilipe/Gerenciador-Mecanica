@@ -13,6 +13,7 @@ namespace Mecanica.App
         public App(IPlatformInitializer initializer)
             : base(initializer)
         {
+            MainPage = new MainPage();
         }
 
         protected override async void OnInitialized()
@@ -28,6 +29,7 @@ namespace Mecanica.App
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<CriarPerfilPage, CriarPerfilPageViewModel>();
         }
     }
 }

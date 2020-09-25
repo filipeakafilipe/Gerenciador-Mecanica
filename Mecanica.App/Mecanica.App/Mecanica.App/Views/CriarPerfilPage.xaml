@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mecanica.App.CriarPerfilPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Picker Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+                ItemsSource="{Binding Roles}"/>
+            <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="2"
+                    Placeholder="Nome"/>
+            <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="3"
+                    Placeholder="Telefone"/>
+            <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="4"
+                    Placeholder="Usuário"/>
+            <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="5"
+                    Placeholder="Senha"/>
+            <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="6"
+                    Placeholder="Confirme a senha"/>
+            <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"
+                Text="Cadastrar" Command="{Binding Cadastrar}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
