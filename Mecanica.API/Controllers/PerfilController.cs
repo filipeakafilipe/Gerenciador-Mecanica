@@ -40,5 +40,13 @@ namespace Mecanica.API.Controllers
 
             return CreatedAtAction(nameof(GetPerfil), new { id = perfil.Id }, perfil);
         }
+
+        [HttpPut]
+        public ActionResult<Perfil> AtualizarPerfil(int id, Perfil perfil)
+        {
+            _context.PerfilRepositorio.Atualizar(id, perfil);
+
+            return perfil;
+        }
     }
 }
