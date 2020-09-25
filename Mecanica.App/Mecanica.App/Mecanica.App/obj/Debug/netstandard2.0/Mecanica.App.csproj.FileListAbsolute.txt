@@ -29,3 +29,4 @@ C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.A
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.dll
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Mecanica.App.pdb
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs

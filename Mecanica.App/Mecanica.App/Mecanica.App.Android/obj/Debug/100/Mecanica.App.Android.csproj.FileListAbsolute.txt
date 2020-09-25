@@ -1119,3 +1119,5 @@ C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.A
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\res\drawable\logo.png
+C:\Users\Victor\Source\Repos\Grupo 7 - LDSI\Mecanica.App\Mecanica.App\Mecanica.App.Android\obj\Debug\100\res\drawable\logo2.png

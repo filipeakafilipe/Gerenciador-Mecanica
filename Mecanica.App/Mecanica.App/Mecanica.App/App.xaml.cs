@@ -13,6 +13,10 @@ namespace Mecanica.App
         public App(IPlatformInitializer initializer)
             : base(initializer)
         {
+#if DEBUG
+            HotReloader.Current.Run(this);
+#endif
+
         }
 
         protected override async void OnInitialized()
@@ -20,6 +24,9 @@ namespace Mecanica.App
             InitializeComponent();
 
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
+
+            MainPage = new LoginPage();
+
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -28,6 +35,7 @@ namespace Mecanica.App
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
         }
     }
 }
