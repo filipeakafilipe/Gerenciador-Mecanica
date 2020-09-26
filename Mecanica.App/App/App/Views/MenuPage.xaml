@@ -8,9 +8,20 @@
 
     
     <StackLayout>
-        <ScrollView Orientation="Vertical">
-            <Button Text="Criar perfil" Command="{Binding CriarPerfilCommand}"/>
-        </ScrollView>
+
+            <Label></Label>
+            <Button Text="Cadastrar Usuário" Command="{Binding CriarPerfilCommand}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Usuário" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Cadastrar Veículo Usuário" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Veículo" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Cadastrar Pedido" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Pedido" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Cadastrar Tipo de Serviço" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Tipo de Serviço" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+
+            
+
+       
     </StackLayout>
     
 
