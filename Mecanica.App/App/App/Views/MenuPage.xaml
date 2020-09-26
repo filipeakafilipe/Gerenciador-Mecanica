@@ -11,13 +11,13 @@
 
             <Label></Label>
             <Button Text="Cadastrar Usuário" Command="{Binding CriarPerfilCommand}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Alterar Usuário" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Cadastrar Veículo Usuário" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Alterar Veículo" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Cadastrar Pedido" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Alterar Pedido" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Cadastrar Tipo de Serviço" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Alterar Tipo de Serviço" Command="{}" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Usuário" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Cadastrar Veículo Usuário"  BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Veículo"  BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Cadastrar Pedido"  BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Pedido" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Cadastrar Tipo de Serviço"  BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Alterar Tipo de Serviço"  BackgroundColor="#2296f3" TextColor="White"/>
 
             
 

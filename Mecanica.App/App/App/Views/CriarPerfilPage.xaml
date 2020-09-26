@@ -43,7 +43,7 @@
                     Placeholder="Confirme a senha"
                 Text="{Binding SenhaConfirmada}"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"
-                Text="Cadastrar" Command="{Binding CadastrarCommand}"/>
+                Text="Cadastrar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"/>
             </Grid>
 
         </ScrollView>
