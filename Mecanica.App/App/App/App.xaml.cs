@@ -13,13 +13,19 @@ namespace App
         public App(IPlatformInitializer initializer)
             : base(initializer)
         {
+#if DEBUG
+            HotReloader.Current.Run(this);
+#endif
         }
 
         protected override async void OnInitialized()
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/LoginPage");
+
+            //MainPage = new LoginPage();
+
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -29,6 +35,9 @@ namespace App
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<CriarPerfilPage, CriarPerfilPageViewModel>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismContentPage1, PrismContentPage1ViewModel>();
+            containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
         }
     }
 }
