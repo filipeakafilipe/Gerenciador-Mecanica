@@ -9,6 +9,6 @@ namespace App.Services
 {
     public static class Base
     {
-        public static string Uri = "#";
+        public static string Uri = "https://192.168.15.27:45457/";
     }
 }

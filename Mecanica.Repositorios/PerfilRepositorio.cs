@@ -1,6 +1,7 @@
 ﻿using Mecanica.Modelos;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Mecanica.Repositorios
@@ -14,7 +15,7 @@ namespace Mecanica.Repositorios
 
         public Perfil Get(int id)
         {
-            return db.Perfils.Where(v => v.Id == id).FirstOrDefault();
+            return db.Perfils.Where(v => v.Id == id).AsNoTracking().FirstOrDefault();
         }
 
         public void Adicionar(Perfil perfil)
@@ -37,11 +38,20 @@ namespace Mecanica.Repositorios
         {
             var perfil = Get(id);
 
-            perfil = novoPerfil;
+            perfil.Login = novoPerfil.Login;
+            perfil.Nome = novoPerfil.Nome;
+            perfil.RoleId = novoPerfil.RoleId;
+            perfil.Senha = novoPerfil.Senha;
+            perfil.Telefone = novoPerfil.Telefone;
 
             db.Entry(perfil).State = EntityState.Modified;
 
             db.SaveChanges();
+        }
+
+        public List<Perfil> GetTodos()
+        {
+            return db.Perfils.ToList();
         }
     }
 }

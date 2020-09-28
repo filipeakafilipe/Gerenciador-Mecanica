@@ -18,8 +18,15 @@ namespace App.ViewModels
             {
                 await navigationService.NavigateAsync("CriarPerfilPage");
             });
+
+            AcompanhamentoPerfilCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("AcompanhamentoPerfilPage");
+            });
         }
 
         public Command CriarPerfilCommand { get; }
+
+        public Command AcompanhamentoPerfilCommand { get; }
     }
 }

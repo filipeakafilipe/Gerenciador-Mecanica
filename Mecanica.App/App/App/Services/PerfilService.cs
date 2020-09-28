@@ -15,5 +15,15 @@ namespace App.Services
         {
             await $"{Base.Uri}api/perfil".PostJsonAsync(perfil);
         }
+
+        public static Task<List<Perfil>> GetPerfis()
+        {
+            return $"{Base.Uri}api/perfil/todos".GetJsonAsync<List<Perfil>>();
+        }
+
+        public static async Task Alterar(Perfil perfil)
+        {
+            await $"{Base.Uri}api/perfil/".PutJsonAsync(perfil);
+        }
     }
 }

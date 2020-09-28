@@ -33,6 +33,12 @@ namespace Mecanica.API.Controllers
             return perfil;
         }
 
+        [HttpGet("todos")]
+        public ActionResult<List<Perfil>> GetTodosPerfis()
+        {
+            return _context.PerfilRepositorio.GetTodos();
+        }
+
         [HttpPost]
         public ActionResult<Perfil> CriarPerfil(Perfil perfil)
         {
@@ -42,11 +48,9 @@ namespace Mecanica.API.Controllers
         }
 
         [HttpPut]
-        public ActionResult<Perfil> AtualizarPerfil(int id, Perfil perfil)
+        public void AtualizarPerfil(Perfil perfil)
         {
-            _context.PerfilRepositorio.Atualizar(id, perfil);
-
-            return perfil;
+            _context.PerfilRepositorio.Atualizar(perfil.Id, perfil);
         }
     }
 }

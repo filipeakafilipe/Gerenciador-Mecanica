@@ -11,7 +11,7 @@
 
             <Label></Label>
             <Button Text="Cadastrar Usuário" Command="{Binding CriarPerfilCommand}" BackgroundColor="#2296f3" TextColor="White"/>
-            <Button Text="Alterar Usuário" BackgroundColor="#2296f3" TextColor="White"/>
+            <Button Text="Acompanhamento de Usuários" Command="{Binding AcompanhamentoPerfilCommand}"  BackgroundColor="#2296f3" TextColor="White"/>
             <Button Text="Cadastrar Veículo Usuário"  BackgroundColor="#2296f3" TextColor="White"/>
             <Button Text="Alterar Veículo"  BackgroundColor="#2296f3" TextColor="White"/>
             <Button Text="Cadastrar Pedido"  BackgroundColor="#2296f3" TextColor="White"/>
