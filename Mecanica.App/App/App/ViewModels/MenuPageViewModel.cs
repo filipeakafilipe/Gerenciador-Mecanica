@@ -23,10 +23,24 @@ namespace App.ViewModels
             {
                 await navigationService.NavigateAsync("AcompanhamentoPerfilPage");
             });
+
+            CriarTipoDeServicoCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("CriarTipoDeServicoPage");
+            });
+
+            AcompanhamentoTipoDeServicoCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("AcompanhamentoTipoDeServicoPage");
+            });
         }
 
         public Command CriarPerfilCommand { get; }
 
         public Command AcompanhamentoPerfilCommand { get; }
+
+        public Command CriarTipoDeServicoCommand { get; }
+
+        public Command AcompanhamentoTipoDeServicoCommand { get; }
     }
 }

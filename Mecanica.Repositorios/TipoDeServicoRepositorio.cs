@@ -37,7 +37,8 @@ namespace Mecanica.Repositorios
         {
             var tipoDeServico = Get(id);
 
-            tipoDeServico = novoTipoDeServico;
+            tipoDeServico.Nome = novoTipoDeServico.Nome;
+            tipoDeServico.Observacoes = novoTipoDeServico.Observacoes;
 
             db.Entry(tipoDeServico).State = EntityState.Modified;
 
