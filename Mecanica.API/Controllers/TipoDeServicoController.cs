@@ -40,5 +40,17 @@ namespace Mecanica.API.Controllers
 
             return CreatedAtAction(nameof(GetTipoDeServico), new { id = tipoDeServico.Id }, tipoDeServico);
         }
+
+        [HttpGet("todos")]
+        public ActionResult<List<TipoDeServico>> GetTodosTipoDeServicos()
+        {
+            return _context.TipoDeServicoRepositorio.GetTodos();
+        }
+
+        [HttpPut]
+        public void AtualizarTipoDeServico(TipoDeServico tipoDeServico)
+        {
+            _context.TipoDeServicoRepositorio.Atualizar(tipoDeServico.Id, tipoDeServico);
+        }
     }
 }

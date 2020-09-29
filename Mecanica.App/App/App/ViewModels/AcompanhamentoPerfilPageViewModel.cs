@@ -16,6 +16,8 @@ namespace App.ViewModels
     {
         public AcompanhamentoPerfilPageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = "Perfis";
+
             Perfis = PerfilService.GetPerfis().Result;
 
             SelectedPerfilChangeCommand = new Command(async () =>

@@ -17,4 +17,5 @@
         <Button Text="Cadastrar Tipo de Serviço" Command="{Binding CriarTipoDeServicoCommand}" BackgroundColor="#2296f3" TextColor="White"/>
         <Button Text="Acompanhamento de Tipo de Serviço" Command="{Binding AcompanhamentoTipoDeServicoCommand}" BackgroundColor="#2296f3" TextColor="White"/>
     </StackLayout>
+    
 </ContentPage>

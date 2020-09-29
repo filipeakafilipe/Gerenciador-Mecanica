@@ -1,6 +1,7 @@
 ﻿using Mecanica.Modelos;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Mecanica.Repositorios
@@ -43,6 +44,11 @@ namespace Mecanica.Repositorios
             db.Entry(tipoDeServico).State = EntityState.Modified;
 
             db.SaveChanges();
+        }
+
+        public List<TipoDeServico> GetTodos()
+        {
+            return db.TipoDeServicos.ToList();
         }
     }
 }
