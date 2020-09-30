@@ -1,6 +1,7 @@
 ﻿using Mecanica.Modelos;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Mecanica.Repositorios
@@ -37,11 +38,31 @@ namespace Mecanica.Repositorios
         {
             var pedido = Get(id);
 
-            pedido = novoPedido;
+            pedido.TipoDeServicoId = novoPedido.TipoDeServicoId;
+            pedido.ValorMaoDeObra = novoPedido.ValorMaoDeObra;
+            pedido.ValorPecas = novoPedido.ValorPecas;
+            pedido.SLA = novoPedido.SLA;
 
             db.Entry(pedido).State = EntityState.Modified;
 
             db.SaveChanges();
+        }
+
+        public List<Pedido> GetTodos()
+        {
+            var tiposDeServico = db.TipoDeServicos.ToList();
+
+            var veiculos = db.Veiculos.ToList();
+
+            var pedidos = db.Pedidos.ToList();
+
+            pedidos.ForEach(p =>
+            {
+                p.TipoDeServico = tiposDeServico.Where(t => t.Id == p.TipoDeServicoId).FirstOrDefault();
+                p.Veiculo = veiculos.Where(v => v.Id == p.VeiculoId).FirstOrDefault();
+            });
+
+            return pedidos;
         }
     }
 }

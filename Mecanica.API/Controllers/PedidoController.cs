@@ -41,5 +41,17 @@ namespace Mecanica.API.Controllers
 
             return CreatedAtAction(nameof(GetPedido), new { id = pedido.Id }, pedido);
         }
+
+        [HttpGet("todos")]
+        public ActionResult<List<Pedido>> GetTodosPedidos()
+        {
+            return _context.PedidoRepositorio.GetTodos();
+        }
+
+        [HttpPut]
+        public void AtualizarPedido(Pedido pedido)
+        {
+            _context.PedidoRepositorio.Atualizar(pedido.Id, pedido);
+        }
     }
 }

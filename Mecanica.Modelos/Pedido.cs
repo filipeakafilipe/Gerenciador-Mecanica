@@ -33,6 +33,9 @@ namespace Mecanica.Modelos
         [Required]
         public double ValorPecas { get; set; }
 
+        [Required]
+        public string SLA { get; set; }
+
         //[Required]
         //public double ValorTotal { get; set; }
     }

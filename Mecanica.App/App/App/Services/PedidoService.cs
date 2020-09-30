@@ -13,5 +13,15 @@ namespace App.Services
         {
             await $"{Base.Uri}api/pedido".PostJsonAsync(pedido);
         }
+
+        public static Task<List<Pedido>> GetPedidos()
+        {
+            return $"{Base.Uri}api/pedido/todos".GetJsonAsync<List<Pedido>>();
+        }
+
+        public static async Task Alterar(Pedido pedido)
+        {
+            await $"{Base.Uri}api/pedido/".PutJsonAsync(pedido);
+        }
     }
 }

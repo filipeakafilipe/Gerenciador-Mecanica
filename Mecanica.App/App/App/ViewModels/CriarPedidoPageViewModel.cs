@@ -29,7 +29,8 @@ namespace App.ViewModels
                     TipoDeServicoId = SelectedItem.Key,
                     VeiculoId = VeiculoId,
                     ValorMaoDeObra = valorMaoDeObra,
-                    ValorPecas = valorPecas
+                    ValorPecas = valorPecas,
+                    SLA = SelectedSLAItem.Value
                 };
 
                 await PedidoService.Cadastrar(pedido);
@@ -54,6 +55,18 @@ namespace App.ViewModels
         public string ValorPecas { get; set; }
 
         private Dictionary<int, string> SLAs = new SLAs().Nomes;
+
+        public List<KeyValuePair<int, string>> PickerSLAItemList
+        {
+            get => SLAs.ToList();
+        }
+
+        private KeyValuePair<int, string> _selectedSLAItem;
+        public KeyValuePair<int, string> SelectedSLAItem
+        {
+            get => _selectedSLAItem;
+            set => _selectedSLAItem = value;
+        }
 
         public Command CadastrarCommand { get; }
 

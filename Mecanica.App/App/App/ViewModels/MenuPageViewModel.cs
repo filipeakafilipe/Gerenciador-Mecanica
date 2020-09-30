@@ -13,7 +13,7 @@ namespace App.ViewModels
     {
         public MenuPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Title = "Página Menu";
+            Title = "Menu";
 
             CriarPerfilCommand = new Command(async () =>
             {
