@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using App.Modelos;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -33,6 +34,11 @@ namespace App.ViewModels
             {
                 await navigationService.NavigateAsync("AcompanhamentoTipoDeServicoPage");
             });
+
+            SelecionarUsuarioVeiculoCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("SelecionarUsuarioVeiculoPage");
+            });
         }
 
         public Command CriarPerfilCommand { get; }
@@ -42,5 +48,9 @@ namespace App.ViewModels
         public Command CriarTipoDeServicoCommand { get; }
 
         public Command AcompanhamentoTipoDeServicoCommand { get; }
+
+        public Command SelecionarUsuarioVeiculoCommand { get; }
+
+        public Command AcompanhamentoVeiculoCommand { get; }
     }
 }

@@ -36,7 +36,13 @@ namespace Mecanica.Repositorios
         {
             var veiculo = Get(id);
 
-            veiculo = novoVeiculo;
+            veiculo.Ano = novoVeiculo.Ano;
+            veiculo.Especificacao = novoVeiculo.Especificacao;
+            veiculo.Kilometragem = novoVeiculo.Kilometragem;
+            veiculo.Marca = novoVeiculo.Marca;
+            veiculo.Modelo = novoVeiculo.Modelo;
+            veiculo.Nome = novoVeiculo.Nome;
+            veiculo.Placa = novoVeiculo.Placa;
 
             db.Entry(veiculo).State = EntityState.Modified;
 

@@ -43,6 +43,8 @@ namespace App
             containerRegistry.RegisterForNavigation<CriarTipoDeServicoPage, CriarTipoDeServicoPageViewModel>();
             containerRegistry.RegisterForNavigation<AcompanhamentoTipoDeServicoPage, AcompanhamentoTipoDeServicoPageViewModel>();
             containerRegistry.RegisterForNavigation<AlterarTipoDeServicoPage, AlterarTipoDeServicoPageViewModel>();
+            containerRegistry.RegisterForNavigation<CadastrarVeiculoPage, CadastrarVeiculoPageViewModel>();
+            containerRegistry.RegisterForNavigation<SelecionarUsuarioVeiculoPage, SelecionarUsuarioVeiculoPageViewModel>();
         }
     }
 }

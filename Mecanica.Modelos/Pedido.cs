@@ -22,13 +22,6 @@ namespace Mecanica.Modelos
         [Required]
         public virtual int TipoDeServicoId { get; set; }
 
-        //[Required]
-        //public Perfil Perfil { get; set; }
-
-        //[Required]
-        //public virtual int PerfilId { get; set; }
-
-        [Required]
         public Veiculo Veiculo { get; set; }
 
         [Required]
