@@ -17,7 +17,7 @@ namespace Mecanica.Modelos
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public Perfil Perfil { get; set; }
+        public virtual Perfil Perfil { get; set; }
 
         [Required]
         public virtual int PerfilId { get; set; }

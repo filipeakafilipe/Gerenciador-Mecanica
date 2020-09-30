@@ -97,7 +97,6 @@ namespace App.ViewModels
             set { SetProperty(ref _SenhaConfirmada, value); }
         }
 
-
         private Dictionary<int, string> Roles = new Roles().Nomes;
 
         public Command AlterarCommand { get; }

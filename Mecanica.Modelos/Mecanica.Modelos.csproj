@@ -9,6 +9,8 @@
     <Compile Remove="Migrations\20200920004725_AdicionaTabelasIniciais.Designer.cs" />
     <Compile Remove="Migrations\20200921220542_TrocaIdsParaInt.cs" />
     <Compile Remove="Migrations\20200921220542_TrocaIdsParaInt.Designer.cs" />
+    <Compile Remove="Migrations\20200930015215_VirtualVeiculoEPedido.cs" />
+    <Compile Remove="Migrations\20200930015215_VirtualVeiculoEPedido.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

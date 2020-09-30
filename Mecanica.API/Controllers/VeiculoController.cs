@@ -40,5 +40,17 @@ namespace Mecanica.API.Controllers
 
             return CreatedAtAction(nameof(GetVeiculo), new { id = veiculo.Id }, veiculo);
         }
+
+        [HttpGet("todos")]
+        public ActionResult<List<Veiculo>> GetTodosVeiculos()
+        {
+            return _context.VeiculoRepositorio.GetTodos();
+        }
+
+        [HttpPut]
+        public void AtualizarPerfil(Veiculo veiculo)
+        {
+            _context.VeiculoRepositorio.Atualizar(veiculo.Id, veiculo);
+        }
     }
 }

@@ -13,5 +13,15 @@ namespace App.Services
         {
             await $"{Base.Uri}api/veiculo".PostJsonAsync(veiculo);
         }
+
+        public static Task<List<Veiculo>> GetVeiculos()
+        {
+            return $"{Base.Uri}api/veiculo/todos".GetJsonAsync<List<Veiculo>>();
+        }
+
+        public static async Task Alterar(Veiculo veiculo)
+        {
+            await $"{Base.Uri}api/veiculo/".PutJsonAsync(veiculo);
+        }
     }
 }

@@ -39,6 +39,11 @@ namespace App.ViewModels
             {
                 await navigationService.NavigateAsync("SelecionarUsuarioVeiculoPage");
             });
+
+            AcompanhamentoVeiculoCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("AcompanhamentoVeiculoPage");
+            });
         }
 
         public Command CriarPerfilCommand { get; }

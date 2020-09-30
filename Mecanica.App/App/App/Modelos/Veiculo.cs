@@ -8,6 +8,8 @@ namespace App.Modelos
     {
         public int Id { get; set; }
 
+        public Perfil Perfil { get; set; }
+
         public int PerfilId { get; set; }
 
         public string Marca { get; set; }

@@ -45,6 +45,8 @@ namespace App
             containerRegistry.RegisterForNavigation<AlterarTipoDeServicoPage, AlterarTipoDeServicoPageViewModel>();
             containerRegistry.RegisterForNavigation<CadastrarVeiculoPage, CadastrarVeiculoPageViewModel>();
             containerRegistry.RegisterForNavigation<SelecionarUsuarioVeiculoPage, SelecionarUsuarioVeiculoPageViewModel>();
+            containerRegistry.RegisterForNavigation<AcompanhamentoVeiculoPage, AcompanhamentoVeiculoPageViewModel>();
+            containerRegistry.RegisterForNavigation<AlterarVeiculoPage, AlterarVeiculoPageViewModel>();
         }
     }
 }

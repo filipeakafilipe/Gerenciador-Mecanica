@@ -1,6 +1,7 @@
 ﻿using Mecanica.Modelos;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Mecanica.Repositorios
@@ -47,6 +48,20 @@ namespace Mecanica.Repositorios
             db.Entry(veiculo).State = EntityState.Modified;
 
             db.SaveChanges();
+        }
+
+        public List<Veiculo> GetTodos()
+        {
+            var perfis = db.Perfils.ToList();
+
+            var veiculos = db.Veiculos.ToList();
+
+            veiculos.ForEach(v =>
+            {
+                v.Perfil = perfis.Where(p => p.Id == v.PerfilId).FirstOrDefault();
+            });
+
+            return veiculos;
         }
     }
 }

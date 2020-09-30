@@ -17,15 +17,15 @@ namespace Mecanica.Modelos
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public TipoDeServico TipoDeServico { get; set; }
-        
-        [Required]
-        public virtual int TipoDeServicoId { get; set; }
-
-        public Veiculo Veiculo { get; set; }
+        public virtual TipoDeServico TipoDeServico { get; set; }
 
         [Required]
-        public virtual int VeiculoId { get; set; }
+        public int TipoDeServicoId { get; set; }
+
+        public virtual Veiculo Veiculo { get; set; }
+
+        [Required]
+        public int VeiculoId { get; set; }
 
         [Required]
         public double ValorMaoDeObra { get; set; }
