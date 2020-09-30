@@ -36,7 +36,6 @@ namespace App
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<CriarPerfilPage, CriarPerfilPageViewModel>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
-            containerRegistry.RegisterForNavigation<PrismContentPage1, PrismContentPage1ViewModel>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
             containerRegistry.RegisterForNavigation<AcompanhamentoPerfilPage, AcompanhamentoPerfilPageViewModel>();
             containerRegistry.RegisterForNavigation<AlterarUsuarioPage, AlterarUsuarioPageViewModel>();
@@ -47,6 +46,10 @@ namespace App
             containerRegistry.RegisterForNavigation<SelecionarUsuarioVeiculoPage, SelecionarUsuarioVeiculoPageViewModel>();
             containerRegistry.RegisterForNavigation<AcompanhamentoVeiculoPage, AcompanhamentoVeiculoPageViewModel>();
             containerRegistry.RegisterForNavigation<AlterarVeiculoPage, AlterarVeiculoPageViewModel>();
+            containerRegistry.RegisterForNavigation<SelecionarUsuarioPedidoPage, SelecionarUsuarioPedidoPageViewModel>();
+            containerRegistry.RegisterForNavigation<SelecionarVeiculoPedidoPage, SelecionarVeiculoPedidoPageViewModel>();
+            containerRegistry.RegisterForNavigation<CriarPedidoPage, CriarPedidoPageViewModel>();
+            containerRegistry.RegisterForNavigation<AcompanhamentoPedidoPage, AcompanhamentoPedidoPageViewModel>();
         }
     }
 }

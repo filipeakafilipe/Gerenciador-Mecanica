@@ -4,19 +4,19 @@ using System.Text;
 
 namespace App.Modelos
 {
-    public class Roles
+    public class SLAs
     {
         // Alterar para pegar do banco
 
         public Dictionary<int, string> Nomes;
 
-        public Roles()
+        public SLAs()
         {
             Nomes = new Dictionary<int, string>
             {
-                {1, "Administrador"},
-                {2, "Mecânico"},
-                {3, "Cliente" }
+                {1, "SLA 1"},
+                {2, "SLA 2"},
+                {3, "SLA 3" }
             };
         }
     }

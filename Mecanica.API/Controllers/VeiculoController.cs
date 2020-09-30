@@ -33,6 +33,19 @@ namespace Mecanica.API.Controllers
             return veiculo;
         }
 
+        [HttpGet("cliente/{perfilId}")]
+        public ActionResult<List<Veiculo>> GetVeiculoCliente(int perfilId)
+        {
+            var veiculos = _context.VeiculoRepositorio.GetVeiculoCliente(perfilId);
+
+            if (veiculos == null)
+            {
+                return NotFound();
+            }
+
+            return veiculos;
+        }
+
         [HttpPost]
         public ActionResult<Veiculo> CriarVeiculo(Veiculo veiculo)
         {

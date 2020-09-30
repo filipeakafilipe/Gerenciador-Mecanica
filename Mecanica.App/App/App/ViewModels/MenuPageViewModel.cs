@@ -35,6 +35,16 @@ namespace App.ViewModels
                 await navigationService.NavigateAsync("AcompanhamentoTipoDeServicoPage");
             });
 
+            SelecionarUsuarioPedidoCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("SelecionarUsuarioPedidoPage");
+            });
+
+            AcompanhamentoPedidoCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("AcompanhamentoPedidoPage");
+            });
+
             SelecionarUsuarioVeiculoCommand = new Command(async () =>
             {
                 await navigationService.NavigateAsync("SelecionarUsuarioVeiculoPage");
@@ -53,6 +63,10 @@ namespace App.ViewModels
         public Command CriarTipoDeServicoCommand { get; }
 
         public Command AcompanhamentoTipoDeServicoCommand { get; }
+
+        public Command SelecionarUsuarioPedidoCommand { get; }
+
+        public Command AcompanhamentoPedidoCommand { get; }
 
         public Command SelecionarUsuarioVeiculoCommand { get; }
 

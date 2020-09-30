@@ -2,9 +2,9 @@
 
 namespace App.Views
 {
-    public partial class PrismContentPage1 : ContentPage
+    public partial class CriarPedidoPage : ContentPage
     {
-        public PrismContentPage1()
+        public CriarPedidoPage()
         {
             InitializeComponent();
         }

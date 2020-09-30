@@ -33,7 +33,7 @@ namespace Mecanica.Modelos
         [Required]
         public double ValorPecas { get; set; }
 
-        [Required]
-        public double ValorTotal { get; set; }
+        //[Required]
+        //public double ValorTotal { get; set; }
     }
 }

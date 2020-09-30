@@ -63,5 +63,10 @@ namespace Mecanica.Repositorios
 
             return veiculos;
         }
+
+        public List<Veiculo> GetVeiculoCliente(int perfilId)
+        {
+            return db.Veiculos.Where(v => v.PerfilId == perfilId).ToList();
+        }
     }
 }

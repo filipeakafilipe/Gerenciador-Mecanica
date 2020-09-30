@@ -19,6 +19,11 @@ namespace App.Services
             return $"{Base.Uri}api/veiculo/todos".GetJsonAsync<List<Veiculo>>();
         }
 
+        public static Task<List<Veiculo>> GetVeiculosCliente(int PerfilId)
+        {
+            return $"{Base.Uri}api/veiculo/cliente/{PerfilId}".GetJsonAsync<List<Veiculo>>();
+        }
+
         public static async Task Alterar(Veiculo veiculo)
         {
             await $"{Base.Uri}api/veiculo/".PutJsonAsync(veiculo);

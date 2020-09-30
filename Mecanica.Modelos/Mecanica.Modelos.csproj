@@ -11,6 +11,8 @@
     <Compile Remove="Migrations\20200921220542_TrocaIdsParaInt.Designer.cs" />
     <Compile Remove="Migrations\20200930015215_VirtualVeiculoEPedido.cs" />
     <Compile Remove="Migrations\20200930015215_VirtualVeiculoEPedido.Designer.cs" />
+    <Compile Remove="Migrations\20200930200552_AddPerfilIdEmPedido.cs" />
+    <Compile Remove="Migrations\20200930200552_AddPerfilIdEmPedido.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
