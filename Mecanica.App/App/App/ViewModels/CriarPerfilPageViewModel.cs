@@ -16,7 +16,8 @@ namespace App.ViewModels
         {
             Title = "Criar perfil";
 
-            CadastrarCommand = new Command(async () => {
+            CadastrarCommand = new Command(async () =>
+            {
                 if (Senha == SenhaConfirmada)
                 {
                     var perfil = new Perfil()
@@ -28,7 +29,14 @@ namespace App.ViewModels
                         Senha = Senha
                     };
 
-                    await PerfilService.Cadastrar(perfil);
+                    try
+                    {
+                        await PerfilService.Cadastrar(perfil);
+                    }
+                    catch
+                    {
+                        await navigationService.NavigateAsync("MenuPage");
+                    }
                 }
             });
         }

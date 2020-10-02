@@ -30,7 +30,14 @@ namespace App.ViewModels
                     Placa = Placa
                 };
 
-                await VeiculoService.Cadastrar(veiculo);
+                try
+                {
+                    await VeiculoService.Cadastrar(veiculo);
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                }
             });
         }
 

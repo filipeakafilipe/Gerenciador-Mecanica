@@ -33,7 +33,14 @@ namespace App.ViewModels
                     SLA = SelectedSLAItem.Value
                 };
 
-                await PedidoService.Cadastrar(pedido);
+                try
+                {
+                    await PedidoService.Cadastrar(pedido);
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                }
             });
         }
 

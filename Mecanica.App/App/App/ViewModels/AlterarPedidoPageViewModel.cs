@@ -28,7 +28,15 @@ namespace App.ViewModels
                     VeiculoId = VeiculoId
                 };
 
-                await PedidoService.Alterar(pedido);
+                try
+                {
+                    await PedidoService.Alterar(pedido);
+
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                }
             });
         }
 

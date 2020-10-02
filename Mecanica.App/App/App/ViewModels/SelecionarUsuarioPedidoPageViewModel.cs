@@ -16,7 +16,14 @@ namespace App.ViewModels
         {
             Title = "Selecionar usuário";
 
-            Perfis = PerfilService.GetPerfis().Result;
+            try
+            {
+                Perfis = PerfilService.GetPerfis().Result;
+            }
+            catch
+            {
+                navigationService.NavigateAsync("MenuPage");
+            }
 
             SelectedUsuarioPedidoChangeCommand = new Command(async () =>
             {

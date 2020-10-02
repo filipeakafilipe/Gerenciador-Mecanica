@@ -23,9 +23,6 @@ namespace App
             InitializeComponent();
 
             await NavigationService.NavigateAsync("NavigationPage/LoginPage");
-
-            //MainPage = new LoginPage();
-
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

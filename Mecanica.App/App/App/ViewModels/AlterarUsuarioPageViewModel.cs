@@ -31,7 +31,14 @@ namespace App.ViewModels
                         Senha = Senha
                     };
 
-                    await PerfilService.Alterar(perfil);
+                    try
+                    {
+                        await PerfilService.Alterar(perfil);
+                    }
+                    catch
+                    {
+                        await navigationService.NavigateAsync("MenuPage");
+                    }
                 }
             });
         }

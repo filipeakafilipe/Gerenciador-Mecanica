@@ -16,7 +16,14 @@ namespace App.ViewModels
         {
             Title = "Veículos";
 
-            Veiculos = VeiculoService.GetVeiculos().Result;
+            try
+            {
+                Veiculos = VeiculoService.GetVeiculos().Result;
+            }
+            catch
+            {
+                navigationService.NavigateAsync("MenuPage");
+            }
 
             SelectedVeiculoChangeCommand = new Command(async () =>
             {

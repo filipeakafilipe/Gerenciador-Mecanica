@@ -16,8 +16,6 @@ namespace App.ViewModels
         {
             Title = "Selecionar veículo";
 
-            //Veiculos = VeiculoService.GetVeiculosCliente(PerfilId).Result;
-
             SelectedVeiculoPedidoChangeCommand = new Command(async () =>
             {
                 var veiculoVM = SelectedVeiculo;
@@ -33,7 +31,14 @@ namespace App.ViewModels
         {
             PerfilId = parameters.GetValue<int>("perfilId");
 
-            Veiculos = VeiculoService.GetVeiculosCliente(PerfilId).Result;
+            try
+            {
+                Veiculos = VeiculoService.GetVeiculosCliente(PerfilId).Result;
+            }
+            catch
+            {
+                NavigationService.NavigateAsync("MenuPage");
+            }
         }
 
         private int _PerfilId;

@@ -32,7 +32,14 @@ namespace App.ViewModels
                     Placa = Placa
                 };
 
-                await VeiculoService.Alterar(veiculo);
+                try
+                {
+                    await VeiculoService.Alterar(veiculo);
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                }
             });
         }
 

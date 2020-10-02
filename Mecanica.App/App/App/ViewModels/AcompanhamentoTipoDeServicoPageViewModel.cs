@@ -16,7 +16,14 @@ namespace App.ViewModels
         {
             Title = "Tipo de serviços";
 
-            TipoDeServicos = TipoDeServicoService.GetTipoDeServicos().Result;
+            try
+            {
+                TipoDeServicos = TipoDeServicoService.GetTipoDeServicos().Result;
+            }
+            catch
+            {
+                navigationService.NavigateAsync("MenuPage");
+            }
 
             SelectedTipoDeServicoChangeCommand = new Command(async () =>
             {

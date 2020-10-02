@@ -18,7 +18,14 @@ namespace App.ViewModels
         {
             Title = "Perfis";
 
-            Perfis = PerfilService.GetPerfis().Result;
+            try
+            {
+                Perfis = PerfilService.GetPerfis().Result;
+            }
+            catch
+            {
+                navigationService.NavigateAsync("MenuPage");
+            }
 
             SelectedPerfilChangeCommand = new Command(async () =>
             {
