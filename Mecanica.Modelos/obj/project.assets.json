@@ -5698,23 +5698,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luana\\.nuget\\packages\\": {},
+    "C:\\Users\\Victor\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luana\\Documents\\Aulas\\SI\\TrabPSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
+      "projectUniqueName": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
       "projectName": "Mecanica.Modelos",
-      "projectPath": "C:\\Users\\luana\\Documents\\Aulas\\SI\\TrabPSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
-      "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luana\\Documents\\Aulas\\SI\\TrabPSI\\Mecanica.Modelos\\obj\\",
+      "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\luana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5769,7 +5769,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
