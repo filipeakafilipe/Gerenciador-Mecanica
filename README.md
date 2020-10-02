@@ -11,21 +11,30 @@ Agilizar  processos rotineiros em uma oficina mecânica.
 ```
 ## Versão Atual
 ```
-X.X.1
+1.0
 ```
 ## Funcionalidades
 ```
 
-→ TBD
-→ TBD
-→ TBD
-→ TBD
-→ TBD
-→ TBD
-→ TBD
-→ TBD
-
+→ Cadastrar perfil
+→ Cadastrar veículo
+→ Cadastrar tipo de serviço
+→ Cadastrar pedido
+→ Visualizar perfis
+→ Visualizar veículos
+→ Visualizar tipos de serviço
+→ Visualizar pedidos
+→ Alterar perfis
+→ Alterar veículos
+→ Alterar tipos de serviço
+→ Alterar pedidos
 ```
 
-## Telas
-→ TBD
+## Como rodar
+
+- Alterar connection string em Mecanica.Modelos.Contexto
+- Selecionar como projeto padrão Mecanica.Modelos
+- Abrir console do NuGet, selecionar projeto padrão Mecanica.Modelos
+- Utilizar o comando update-database
+- Alterar Base.Uri em App.Services.Base para sua API (caso esteja utilizando um celular Android utilizar o Conveyor - https://keyoti.com/products/conveyor/index.html)
+- Selecionar como projetos de inicialização Mecanica.Api e Api.Android
