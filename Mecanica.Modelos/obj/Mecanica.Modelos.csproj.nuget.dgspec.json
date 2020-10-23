@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {}
+    "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
+    "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
         "projectName": "Mecanica.Modelos",
-        "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
-        "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\obj\\",
+        "projectPath": "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
+        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -73,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
