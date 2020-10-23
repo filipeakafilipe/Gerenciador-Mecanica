@@ -11,15 +11,15 @@
     <ScrollView>
         <StackLayout Orientation="Vertical">
 
-            <Label Text="Neymar Jr" FontSize="40" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" ></Label>
-            <Button x:Name="Veiculos" Text="2 Veículos Cadastrados" HorizontalOptions="FillAndExpand" BackgroundColor="#2296f3" TextColor="White" Command="{Binding MenuPageCommand}"></Button>
+            <Label Text="Neymar Junior" FontSize="35" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" ></Label>
+            <Button x:Name="Veiculos" Text="3 Veículos Cadastrados" HorizontalOptions="FillAndExpand" BackgroundColor="#2296f3" TextColor="White" ></Button>
 
             <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
                 <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start">
                     <Image Source="Car" WidthRequest="130"></Image>
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center">
-                    <Button x:Name="Car1" Text="Fiat Palio 1.0" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
+                    <Button x:Name="Car1" Text="Fiat Palio 1.0" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" ></Button>
                     <Label Text="2010  63.000km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                     <Label Text="HGX-1357" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                 </StackLayout>
@@ -32,13 +32,25 @@
                     <Image Source="Car" WidthRequest="130"></Image>
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center">
-                    <Button x:Name="Car2" Text="Ford Ka 2.0" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
+                    <Button x:Name="Car2" Text="Ford Ka 1.6" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black"></Button>
                     <Label Text="2014  43.287km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                     <Label Text="QYW-2557" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                 </StackLayout>
 
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start">
+                    <Image Source="Car" WidthRequest="130"></Image>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center">
+                    <Button x:Name="Car3" Text="Fiat Toro 2.0" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black"></Button>
+                    <Label Text="2020  3.287km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                    <Label Text="XXX-1237" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                </StackLayout>
 
             </StackLayout>
+
+
 
 
 

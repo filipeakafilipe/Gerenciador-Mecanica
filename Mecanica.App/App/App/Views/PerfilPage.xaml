@@ -11,24 +11,24 @@
     <ScrollView>
         <StackLayout Orientation="Vertical">
 
-            <Label Text="Neymar Jr" FontSize="40" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" ></Label>
+            <Label Text="Neymar Júnior" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" ></Label>
             <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
                 <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center">
-                    <Button x:Name="btnLogin" Text="Serviços" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
+                    <Button x:Name="BServicos" Text="Serviços" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center">
-                    <Button x:Name="btnLogin" Text="Veículos" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
+                    <Button x:Name="BVeiculos" Text="Veículos" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
                 </StackLayout>
             </StackLayout>
           
 
-            <Label Text="Nome" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+            <Label Text="Nome" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
             <Entry x:Name="txtNome" Placeholder="Neymar da Silva Santos Júnior" TextColor="Black" ></Entry>
 
-            <Label Text="Telefone" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+            <Label Text="Telefone" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
             <Entry x:Name="txtTelefone" Placeholder="(31) 9999-9999 " TextColor="Black" ></Entry>
 
-            <Label Text="Usuário" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+            <Label Text="Usuário" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
             <Entry x:Name="txtUsuario" Placeholder="Ney22" TextColor="Black" ></Entry>
 
         </StackLayout>
