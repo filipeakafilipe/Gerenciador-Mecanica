@@ -54,6 +54,23 @@ namespace App.ViewModels
             {
                 await navigationService.NavigateAsync("AcompanhamentoVeiculoPage");
             });
+
+            //new
+            PerfilCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("PerfilPage");
+            });
+
+            MeusVeiculosCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("MeusVeiculosPage");
+            });
+
+            MinhasManutencoesCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("MinhasManutencoesPage");
+            });
+
         }
 
         public Command CriarPerfilCommand { get; }
@@ -71,5 +88,12 @@ namespace App.ViewModels
         public Command SelecionarUsuarioVeiculoCommand { get; }
 
         public Command AcompanhamentoVeiculoCommand { get; }
+
+        //new
+        public Command PerfilCommand { get; }
+
+        public Command MeusVeiculosCommand { get; }
+
+        public Command MinhasManutencoesCommand { get; }
     }
 }

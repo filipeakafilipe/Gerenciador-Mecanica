@@ -1,15 +1,17 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace App.ViewModels
 {
-    public class PerfilPageViewModel : BindableBase
+    public class PerfilPageViewModel : ViewModelBase
     {
-        public PerfilPageViewModel()
+        public PerfilPageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = "Meu Perfil";
 
         }
     }
