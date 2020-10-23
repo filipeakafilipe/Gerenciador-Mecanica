@@ -48,6 +48,9 @@ namespace App
             containerRegistry.RegisterForNavigation<CriarPedidoPage, CriarPedidoPageViewModel>();
             containerRegistry.RegisterForNavigation<AcompanhamentoPedidoPage, AcompanhamentoPedidoPageViewModel>();
             containerRegistry.RegisterForNavigation<AlterarPedidoPage, AlterarPedidoPageViewModel>();
+            containerRegistry.RegisterForNavigation<PerfilPage, PerfilPageViewModel>();
+            containerRegistry.RegisterForNavigation<MeusVeiculosPage, MeusVeiculosPageViewModel>();
+            containerRegistry.RegisterForNavigation<MinhasManutencoesPage, MinhasManutencoesPageViewModel>();
         }
     }
 }
