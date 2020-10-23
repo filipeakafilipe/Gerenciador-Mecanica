@@ -24,25 +24,25 @@
 
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="1"
                         Placeholder="Marca"
-                        Text="{Binding Marca}"/>
+                        Text="Marca"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="2"
                         Placeholder="Nome"
-                        Text="{Binding Nome}"/>
+                        Text="Nome"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="3"
                         Placeholder="Especificação"
-                        Text="{Binding Especificacao}"/>
+                        Text="Especificação"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="4"
                         Placeholder="Ano"
-                        Text="{Binding Ano}"/>
+                        Text="Ano"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="5"
                         Placeholder="Modelo"
-                        Text="{Binding Modelo}"/>
+                        Text="Modelo"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="6"
                         Placeholder="Kilometragem"
-                        Text="{Binding Kilometragem}"/>
+                        Text="Kilometragem"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="7"
                         Placeholder="Placa"
-                        Text="{Binding Placa}"/>
+                        Text="Placa"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="8"
                 Text="Alterar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding AlterarCommand}"/>
             </Grid>

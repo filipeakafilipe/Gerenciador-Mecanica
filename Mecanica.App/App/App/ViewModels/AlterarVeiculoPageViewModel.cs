@@ -32,28 +32,28 @@ namespace App.ViewModels
                     Placa = Placa
                 };
 
-                try
-                {
-                    await VeiculoService.Alterar(veiculo);
-                }
-                catch
-                {
-                    await navigationService.NavigateAsync("MenuPage");
-                }
+                //try
+                //{
+                //    await VeiculoService.Alterar(veiculo);
+                //}
+                //catch
+                //{
+                //    await navigationService.NavigateAsync("MenuPage");
+                //}
             });
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            Id = int.Parse(parameters.GetValue<string>("id"));
-            PerfilId = int.Parse(parameters.GetValue<string>("perfilId"));
-            Marca = parameters.GetValue<string>("marca");
-            Nome = parameters.GetValue<string>("nome");
-            Especificacao = parameters.GetValue<string>("especificacao");
-            Ano = int.Parse(parameters.GetValue<string>("ano"));
-            Modelo = parameters.GetValue<string>("modelo");
-            Kilometragem = int.Parse(parameters.GetValue<string>("kilometragem"));
-            Placa = parameters.GetValue<string>("placa");
+            //Id = int.Parse(parameters.GetValue<string>("id"));
+            //PerfilId = int.Parse(parameters.GetValue<string>("perfilId"));
+            //Marca = parameters.GetValue<string>("marca");
+            //Nome = parameters.GetValue<string>("nome");
+            //Especificacao = parameters.GetValue<string>("especificacao");
+            //Ano = int.Parse(parameters.GetValue<string>("ano"));
+            //Modelo = parameters.GetValue<string>("modelo");
+            //Kilometragem = int.Parse(parameters.GetValue<string>("kilometragem"));
+            //Placa = parameters.GetValue<string>("placa");
         }
 
         public Command AlterarCommand { get; }

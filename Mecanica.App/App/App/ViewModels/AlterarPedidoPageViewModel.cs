@@ -30,7 +30,7 @@ namespace App.ViewModels
 
                 try
                 {
-                    await PedidoService.Alterar(pedido);
+                    //await PedidoService.Alterar(pedido);
 
                 }
                 catch
@@ -42,16 +42,16 @@ namespace App.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            Id = parameters.GetValue<int>("id");
-            ValorMaoDeObra = parameters.GetValue<double>("valorMaoDeObra");
-            ValorPecas = parameters.GetValue<double>("valorPecas");
-            VeiculoId = parameters.GetValue<int>("veiculoId");
+            //Id = parameters.GetValue<int>("id");
+            //ValorMaoDeObra = parameters.GetValue<double>("valorMaoDeObra");
+            //ValorPecas = parameters.GetValue<double>("valorPecas");
+            //VeiculoId = parameters.GetValue<int>("veiculoId");
 
-            var tipoDeServico = parameters.GetValue<int>("tipoDeServicoId");
-            SelectedItem = PickerItemList.Where(p => p.Key == tipoDeServico).FirstOrDefault();
+            //var tipoDeServico = parameters.GetValue<int>("tipoDeServicoId");
+            //SelectedItem = PickerItemList.Where(p => p.Key == tipoDeServico).FirstOrDefault();
 
-            var sla = parameters.GetValue<string>("SLA");
-            SelectedSLAItem = PickerSLAItemList.Where(s => s.Value == sla).FirstOrDefault();
+            //var sla = parameters.GetValue<string>("SLA");
+            //SelectedSLAItem = PickerSLAItemList.Where(s => s.Value == sla).FirstOrDefault();
         }
 
         private int _Id;
@@ -93,7 +93,8 @@ namespace App.ViewModels
 
         public List<KeyValuePair<int, string>> PickerSLAItemList
         {
-            get => SLAs.ToList();
+            get => new List<KeyValuePair<int, string>>();
+            //get => SLAs.ToList();
         }
 
         private KeyValuePair<int, string> _selectedSLAItem;
@@ -105,7 +106,8 @@ namespace App.ViewModels
 
         public List<KeyValuePair<int, string>> PickerItemList
         {
-            get => new TipoDeServico().PopulaTipos();
+            get => new List<KeyValuePair<int, string>>();
+            //get => new TipoDeServico().PopulaTipos();
         }
 
         private KeyValuePair<int, string> _selectedItem;

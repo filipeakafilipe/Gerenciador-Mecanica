@@ -16,29 +16,34 @@ namespace App.ViewModels
         {
             Title = "Selecionar veículo";
 
+            Veiculos = new List<Veiculo>();
+            Veiculos.Add(new Veiculo() { Id = 1, Nome = "Nome", Ano = 2000, Especificacao = "Especificação", Kilometragem = 1000, Marca = "Marca", Modelo = "Modelo", PerfilId = 1, Placa = "Placa" });
+            Veiculos.Add(new Veiculo() { Id = 1, Nome = "Nome", Ano = 2000, Especificacao = "Especificação", Kilometragem = 1000, Marca = "Marca", Modelo = "Modelo", PerfilId = 1, Placa = "Placa" });
+
             SelectedVeiculoPedidoChangeCommand = new Command(async () =>
             {
-                var veiculoVM = SelectedVeiculo;
+                //var veiculoVM = SelectedVeiculo;
 
-                var dados = new NavigationParameters();
-                dados.Add("veiculoId", veiculoVM.Id);
+                //var dados = new NavigationParameters();
+                //dados.Add("veiculoId", veiculoVM.Id);
 
-                await navigationService.NavigateAsync("CriarPedidoPage", dados);
+                await navigationService.NavigateAsync("CriarPedidoPage"/*, dados*/);
             });
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            PerfilId = parameters.GetValue<int>("perfilId");
+            //PerfilId = parameters.GetValue<int>("perfilId");
 
-            try
-            {
-                Veiculos = VeiculoService.GetVeiculosCliente(PerfilId).Result;
-            }
-            catch
-            {
-                NavigationService.NavigateAsync("MenuPage");
-            }
+            //try
+            //{
+ 
+            //    Veiculos = VeiculoService.GetVeiculosCliente(PerfilId).Result;
+            //}
+            //catch
+            //{
+            //    NavigationService.NavigateAsync("MenuPage");
+            //}
         }
 
         private int _PerfilId;

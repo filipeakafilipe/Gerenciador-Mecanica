@@ -32,9 +32,9 @@
                         ItemsSource="{Binding PickerSLAItemList}"
                         SelectedItem="{Binding SelectedSLAItem}"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="3"
-                        Text="{Binding ValorMaoDeObra}"/>
+                        Text="Valor mão de obra"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="4"
-                        Text="{Binding ValorPecas}"/>
+                        Text="Valor peças"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5"
                         Text="Alterar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding AlterarCommand}"/>
             </Grid>

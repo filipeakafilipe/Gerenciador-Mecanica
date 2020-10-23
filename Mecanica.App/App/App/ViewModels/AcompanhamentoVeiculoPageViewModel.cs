@@ -16,14 +16,17 @@ namespace App.ViewModels
         {
             Title = "Veículos";
 
-            try
-            {
-                Veiculos = VeiculoService.GetVeiculos().Result;
-            }
-            catch
-            {
-                navigationService.NavigateAsync("MenuPage");
-            }
+            //try
+            //{
+            Veiculos = new List<Veiculo>();
+            Veiculos.Add(new Veiculo() { Id = 1, Nome = "Nome", Ano = 2000, Especificacao = "Especificação", Kilometragem = 1000, Marca = "Marca", Modelo = "Modelo", PerfilId = 1, Placa = "Placa" });
+            Veiculos.Add(new Veiculo() { Id = 1, Nome = "Nome", Ano = 2000, Especificacao = "Especificação", Kilometragem = 1000, Marca = "Marca", Modelo = "Modelo", PerfilId = 1, Placa = "Placa" });
+            //    Veiculos = VeiculoService.GetVeiculos().Result;
+            //}
+            //catch
+            //{
+            //    navigationService.NavigateAsync("MenuPage");
+            //}
 
             SelectedVeiculoChangeCommand = new Command(async () =>
             {

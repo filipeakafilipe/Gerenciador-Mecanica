@@ -31,9 +31,9 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="0"
-                                       Text="{Binding Nome}"/>
+                                       Text="Nome 1"/>
                                 <Label Grid.Column="1"
-                                       Text="{Binding Login}"/>
+                                       Text="Login 1"/>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

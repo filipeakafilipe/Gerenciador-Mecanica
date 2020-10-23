@@ -29,14 +29,14 @@ namespace App.ViewModels
                         Senha = Senha
                     };
 
-                    try
-                    {
-                        await PerfilService.Cadastrar(perfil);
-                    }
-                    catch
-                    {
-                        await navigationService.NavigateAsync("MenuPage");
-                    }
+                    //try
+                    //{
+                    //    await PerfilService.Cadastrar(perfil);
+                    //}
+                    //catch
+                    //{
+                    //    await navigationService.NavigateAsync("MenuPage");
+                    //}
                 }
             });
         }

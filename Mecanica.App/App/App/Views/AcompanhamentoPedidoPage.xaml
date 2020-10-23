@@ -32,11 +32,11 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Row="1" Grid.Column="1"
-                                       Text="{Binding TipoDeServico.Nome}"/>
+                                       Text="Nome do serviço"/>
                                 <Label Grid.Row="2" Grid.Column="1"
-                                       Text="{Binding Veiculo.Nome}"/>
+                                       Text="Nome veículo"/>
                                 <Label Grid.Row="2" Grid.Column="2"
-                                       Text="{Binding Veiculo.Placa}"/>
+                                       Text="Placa"/>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

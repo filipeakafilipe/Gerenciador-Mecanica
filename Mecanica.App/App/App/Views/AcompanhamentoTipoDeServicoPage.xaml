@@ -29,8 +29,8 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0"
-                                       Text="{Binding Nome}"/>
+                                <Label Grid.Row="0" Grid.Column="0"
+                                       Text="Tipo de serviço 1"/>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
