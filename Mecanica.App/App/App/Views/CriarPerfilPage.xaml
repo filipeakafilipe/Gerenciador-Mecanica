@@ -23,27 +23,28 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Picker Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Title="Selecionar Perfil de Usuário" 
+                <Picker Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Margin="30,-15,30,0" Title="Selecionar Perfil de Usuário" 
                 ItemDisplayBinding="{Binding Value}"
                 ItemsSource="{Binding PickerItemList}"
                 SelectedItem="{Binding SelectedItem}"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="2"
                     Placeholder="Nome"
+                        Margin="30,0,30,0"
                     Text="{Binding Nome}"/>
-                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="3"
+                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="3"  Margin="30,0,30,0"
                     Placeholder="Telefone"
                 Text="{Binding Telefone}"/>
-                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="4"
+                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="4" Margin="30,0,30,0"
                     Placeholder="Usuário"
                 Text="{Binding Usuario}"/>
-                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="5"
+                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="5" Margin="30,0,30,0"
                     Placeholder="Senha"
                 Text="{Binding Senha}"/>
-                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="6"
+                <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="6" Margin="30,0,30,0"
                     Placeholder="Confirme a senha"
                 Text="{Binding SenhaConfirmada}"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"
-                Text="Cadastrar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"/>
+                Text="Cadastrar" Padding="20" HorizontalOptions="Center" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"/>
             </Grid>
 
         </ScrollView>
