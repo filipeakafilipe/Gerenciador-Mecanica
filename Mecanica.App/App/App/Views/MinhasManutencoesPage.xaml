@@ -9,30 +9,37 @@
     <ScrollView>
         <StackLayout Orientation="Vertical">
 
-            <Label Text="Neymar Junior" FontSize="35" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" ></Label>
-            <Button x:Name="Veiculos" Text="2 Manutenções Realizadas" HorizontalOptions="FillAndExpand" BackgroundColor="#2296f3" TextColor="White" Command="{Binding MenuPageCommand}"></Button>
+            <Label Text="Manutenções de Neymar Jr" FontSize="25" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="30,0,30,0" TextColor="Black"></Label>
+            <Label x:Name="Veiculos" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="LightGray" TextColor="White" ></Label>
+            <Label x:Name="Veiculos2" FontSize="20" HorizontalTextAlignment="Center" Text="2 Manutenções Cadastradas" HorizontalOptions="Fill"  TextColor="Black"></Label>
+            <Label x:Name="Veiculos3" FontSize="5" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="#2296f3" TextColor="White" ></Label>
 
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Margin="10,0,0,0">
                 <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start">
-                    <Image Source="Oil" WidthRequest="120"></Image>
+                    <Image Source="Oil2" WidthRequest="120"></Image>
                 </StackLayout>
-                <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center">
-                    <Button x:Name="Car1" Text="Troca de Óleo" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
-                    <Label Text="Palio 2010  63.000km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                    <Label Text="HGX-1357" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center" Margin="15,0,0,0">
+                    <Label x:Name="Car1" FontSize="18" Text="Troca de Oléo" HorizontalOptions="Start" BackgroundColor="White" TextColor="Black" ></Label>
+                    <Label Text="Veículo: Fiat Palio 1.0" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                    <Label Text="Placa: HGX-1337" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                    <Label Text="Status: Concluído em 15/09/2020" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                    <Label Text="Valor: R$150" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                 </StackLayout>
 
 
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Margin="10,20,0,0">
                 <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start">
-                    <Image Source="Pneu" WidthRequest="130"></Image>
+                    <Image Source="Ferramenta" WidthRequest="120"></Image>
                 </StackLayout>
-                <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center">
-                    <Button x:Name="Car2" Text="Pastilha de Freio" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Command="{Binding MenuPageCommand}"></Button>
-                    <Label Text="  Ford Ka 2014  43.287km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                    <Label Text="  QYW-2557" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center" Margin="15,0,0,0">
+                    <Label x:Name="car2" FontSize="18" Text="Troca da Pastilha de Freio" HorizontalOptions="Start" BackgroundColor="White" TextColor="Black" ></Label>
+                    <Label Text="Veículo: Ford Ka Class 1.0" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                    <Label Text="Placa: OWL-4321" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                    <Label Text="Status: Concluído em 13/08/2020" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                    <Label Text="Valor: R$120" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                 </StackLayout>
 
 
