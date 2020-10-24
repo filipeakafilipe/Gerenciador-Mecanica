@@ -10,6 +10,7 @@ using Xamarin.Forms;
 
 namespace App.ViewModels
 {
+
     public class CriarPerfilPageViewModel : ViewModelBase
     {
         public CriarPerfilPageViewModel(INavigationService navigationService) : base(navigationService)
