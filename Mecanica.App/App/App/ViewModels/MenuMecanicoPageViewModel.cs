@@ -12,8 +12,6 @@ namespace App.ViewModels
     {
         public MenuMecanicoPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            var user = Perfil;
-
             AcompanhamentoPedidosAtuaisCommand = new Command(async () =>
             {
                 await navigationService.NavigateAsync("AcompanhamentoPedidosAtuaisPage");

@@ -30,7 +30,7 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Row="0" Grid.Column="0"
-                                       Text="Tipo de serviço 1"/>
+                                       Text="{Binding Nome}"/>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

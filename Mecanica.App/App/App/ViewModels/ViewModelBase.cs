@@ -19,13 +19,6 @@ namespace App.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        private Perfil _perfil;
-        public Perfil Perfil
-        {
-            get { return _perfil; }
-            set { SetProperty(ref _perfil, value); }
-        }
-
         public ViewModelBase(INavigationService navigationService)
         {
             NavigationService = navigationService;

@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using App.Modelos;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -12,7 +13,19 @@ namespace App.ViewModels
         public PerfilPageViewModel(INavigationService navigationService) : base(navigationService)
         {
             Title = "Meu Perfil";
+        }
 
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            Usuario = parameters.GetValue<Perfil>("usuario");
+        }
+
+        private Perfil _Usuario;
+
+        public Perfil Usuario
+        {
+            get { return _Usuario; }
+            set { SetProperty(ref _Usuario, value); }
         }
     }
 }

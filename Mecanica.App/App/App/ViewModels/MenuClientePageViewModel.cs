@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using App.Modelos;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -16,18 +17,32 @@ namespace App.ViewModels
 
             PerfilCommand = new Command(async () =>
             {
-                await navigationService.NavigateAsync("PerfilPage");
+                var dados = new NavigationParameters();
+                dados.Add("usuario", Usuario);
+
+                await navigationService.NavigateAsync("PerfilPage", dados);
             });
 
             MeusVeiculosCommand = new Command(async () =>
             {
-                await navigationService.NavigateAsync("MeusVeiculosPage");
+                var dados = new NavigationParameters();
+                dados.Add("usuarioId", Usuario.Id);
+
+                await navigationService.NavigateAsync("MeusVeiculosPage", dados);
             });
 
             MinhasManutencoesCommand = new Command(async () =>
             {
-                await navigationService.NavigateAsync("MinhasManutencoesPage");
+                //var dados = new NavigationParameters();
+                //dados.Add();
+
+                await navigationService.NavigateAsync("MinhasManutencoesPage"/*, dados*/);
             });
+        }
+
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            Usuario = parameters.GetValue<Perfil>("usuario");
         }
 
         public Command PerfilCommand { get; }
@@ -35,5 +50,13 @@ namespace App.ViewModels
         public Command MeusVeiculosCommand { get; }
 
         public Command MinhasManutencoesCommand { get; }
+
+        private Perfil _Usuario;
+
+        public Perfil Usuario
+        {
+            get { return _Usuario; }
+            set { SetProperty(ref _Usuario, value); }
+        }
     }
 }

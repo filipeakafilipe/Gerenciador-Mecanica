@@ -16,28 +16,25 @@ namespace App.ViewModels
         {
             Title = "Tipo de serviços";
 
-            //try
-            //{
-            TipoDeServicos = new List<TipoDeServico>();
-            TipoDeServicos.Add(new TipoDeServico() { Id = 1, Nome = "Tipo de serviço 1", Observacoes = "Observações" });
-            TipoDeServicos.Add(new TipoDeServico() { Id = 2, Nome = "Tipo de serviço 2", Observacoes = "Observações" });
-            //    TipoDeServicos = TipoDeServicoService.GetTipoDeServicos().Result;
-            //}
-            //catch
-            //{
-            //    navigationService.NavigateAsync("MenuPage");
-            //}
+            try
+            {
+                TipoDeServicos = TipoDeServicoService.GetTipoDeServicos().Result;
+            }
+            catch
+            {
+                navigationService.NavigateAsync("MenuPage");
+            }
 
             SelectedTipoDeServicoChangeCommand = new Command(async () =>
             {
                 var tipoDeServicoVM = SelectedTipoDeServico;
 
-                //var dados = new NavigationParameters();
-                //dados.Add("id", tipoDeServicoVM.Id);
-                //dados.Add("nome", tipoDeServicoVM.Nome);
-                //dados.Add("observacoes", tipoDeServicoVM.Observacoes);
+                var dados = new NavigationParameters();
+                dados.Add("id", tipoDeServicoVM.Id);
+                dados.Add("nome", tipoDeServicoVM.Nome);
+                dados.Add("observacoes", tipoDeServicoVM.Observacoes);
 
-                await navigationService.NavigateAsync("AlterarTipoDeServicoPage"/*, dados*/);
+                await navigationService.NavigateAsync("AlterarTipoDeServicoPage", dados);
             });
         }
 

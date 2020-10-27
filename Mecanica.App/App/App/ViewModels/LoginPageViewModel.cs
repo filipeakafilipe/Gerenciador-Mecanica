@@ -24,8 +24,6 @@ namespace App.ViewModels
                 {
                     var user = PerfilService.Logar(usuario).Result;
 
-                    Perfil = user;
-
                     if (user.RoleId == 1)
                     {
                         await navigationService.NavigateAsync("MenuPage");
@@ -36,7 +34,10 @@ namespace App.ViewModels
                     }
                     if (user.RoleId == 3)
                     {
-                        await navigationService.NavigateAsync("MenuClientePage");
+                        var dados = new NavigationParameters();
+                        dados.Add("usuario", user);
+
+                        await navigationService.NavigateAsync("MenuClientePage", dados);
                     }
                 }
                 catch

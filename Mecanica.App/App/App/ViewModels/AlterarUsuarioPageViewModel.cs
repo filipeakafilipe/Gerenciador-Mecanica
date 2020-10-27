@@ -31,29 +31,29 @@ namespace App.ViewModels
                         Senha = Senha
                     };
 
-                    //try
-                    //{
-                    //    await PerfilService.Alterar(perfil);
-                    //}
-                    //catch
-                    //{
-                    //    await navigationService.NavigateAsync("MenuPage");
-                    //}
+                    try
+                    {
+                        await PerfilService.Alterar(perfil);
+                    }
+                    catch
+                    {
+                        await navigationService.NavigateAsync("MenuPage");
+                    }
                 }
             });
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            //Id = int.Parse(parameters.GetValue<string>("id"));
-            //Nome = parameters.GetValue<string>("nome");
-            //Telefone = parameters.GetValue<string>("telefone");
-            //Usuario = parameters.GetValue<string>("login");
-            //Senha = parameters.GetValue<string>("senha");
-            //SenhaConfirmada = parameters.GetValue<string>("senha");
+            Id = int.Parse(parameters.GetValue<string>("id"));
+            Nome = parameters.GetValue<string>("nome");
+            Telefone = parameters.GetValue<string>("telefone");
+            Usuario = parameters.GetValue<string>("login");
+            Senha = parameters.GetValue<string>("senha");
+            SenhaConfirmada = parameters.GetValue<string>("senha");
 
-            //var roleId = int.Parse(parameters.GetValue<string>("roleId"));
-            //SelectedItem = PickerItemList.Where(p => p.Key == roleId).FirstOrDefault();
+            var roleId = int.Parse(parameters.GetValue<string>("roleId"));
+            SelectedItem = PickerItemList.Where(p => p.Key == roleId).FirstOrDefault();
         }
 
         private int _Id;

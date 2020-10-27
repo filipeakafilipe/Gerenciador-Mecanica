@@ -5,6 +5,7 @@ using App.Views;
 using Xamarin.Essentials.Interfaces;
 using Xamarin.Essentials.Implementation;
 using Xamarin.Forms;
+using App.Modelos;
 
 namespace App
 {
@@ -24,6 +25,8 @@ namespace App
 
             await NavigationService.NavigateAsync("NavigationPage/LoginPage");
         }
+
+        public Perfil UsuarioLogado { get; set; }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {

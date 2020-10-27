@@ -18,35 +18,35 @@ namespace App.ViewModels
 
             CadastrarCommand = new Command(async () =>
             {
-                //ValorMaoDeObra.Replace(",", ".");
-                //ValorPecas.Replace(",", ".");
+                ValorMaoDeObra.Replace(",", ".");
+                ValorPecas.Replace(",", ".");
 
-                //double valorMaoDeObra = double.Parse(ValorMaoDeObra);
-                //double valorPecas = double.Parse(ValorPecas);
+                double valorMaoDeObra = double.Parse(ValorMaoDeObra);
+                double valorPecas = double.Parse(ValorPecas);
 
-                //var pedido = new Pedido()
-                //{
-                //    TipoDeServicoId = SelectedItem.Key,
-                //    VeiculoId = VeiculoId,
-                //    ValorMaoDeObra = valorMaoDeObra,
-                //    ValorPecas = valorPecas,
-                //    SLA = SelectedSLAItem.Value
-                //};
+                var pedido = new Pedido()
+                {
+                    TipoDeServicoId = SelectedItem.Key,
+                    VeiculoId = VeiculoId,
+                    ValorMaoDeObra = valorMaoDeObra,
+                    ValorPecas = valorPecas,
+                    SLA = SelectedSLAItem.Value
+                };
 
-                //try
-                //{
-                //    await PedidoService.Cadastrar(pedido);
-                //}
-                //catch
-                //{
-                //    await navigationService.NavigateAsync("MenuPage");
-                //}
+                try
+                {
+                    await PedidoService.Cadastrar(pedido);
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                }
             });
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            //VeiculoId = parameters.GetValue<int>("veiculoId");
+            VeiculoId = parameters.GetValue<int>("veiculoId");
         }
 
         private int _VeiculoId;

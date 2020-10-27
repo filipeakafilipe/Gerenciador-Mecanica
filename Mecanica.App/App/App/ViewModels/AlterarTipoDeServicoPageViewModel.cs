@@ -18,30 +18,29 @@ namespace App.ViewModels
 
             AlterarCommand = new Command(async () =>
             {
+                var tipoDeServico = new TipoDeServico()
+                {
+                    Id = Id,
+                    Nome = Nome,
+                    Observacoes = Observacoes
+                };
 
-                //var tipoDeServico = new TipoDeServico()
-                //{
-                //    Id = Id,
-                //    Nome = Nome,
-                //    Observacoes = Observacoes
-                //};
-
-                //try
-                //{
-                //    await TipoDeServicoService.Alterar(tipoDeServico);
-                //}
-                //catch
-                //{
-                //    await navigationService.NavigateAsync("MenuPage");
-                //}
+                try
+                {
+                    await TipoDeServicoService.Alterar(tipoDeServico);
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                }
             });
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            //Id = int.Parse(parameters.GetValue<string>("id"));
-            //Nome = parameters.GetValue<string>("nome");
-            //Observacoes = parameters.GetValue<string>("observacoes");
+            Id = int.Parse(parameters.GetValue<string>("id"));
+            Nome = parameters.GetValue<string>("nome");
+            Observacoes = parameters.GetValue<string>("observacoes");
         }
 
         private int _Id;
