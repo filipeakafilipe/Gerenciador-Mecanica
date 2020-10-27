@@ -10,6 +10,7 @@ using Xamarin.Forms;
 
 namespace App.ViewModels
 {
+
     public class CriarPerfilPageViewModel : ViewModelBase
     {
         public CriarPerfilPageViewModel(INavigationService navigationService) : base(navigationService)
@@ -29,14 +30,14 @@ namespace App.ViewModels
                         Senha = Senha
                     };
 
-                    try
-                    {
-                        await PerfilService.Cadastrar(perfil);
-                    }
-                    catch
-                    {
-                        await navigationService.NavigateAsync("MenuPage");
-                    }
+                    //try
+                    //{
+                    //    await PerfilService.Cadastrar(perfil);
+                    //}
+                    //catch
+                    //{
+                    //    await navigationService.NavigateAsync("MenuPage");
+                    //}
                 }
             });
         }

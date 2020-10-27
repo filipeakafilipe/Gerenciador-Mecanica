@@ -33,10 +33,10 @@
                         SelectedItem="{Binding SelectedSLAItem}"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="3"
                         Placeholder="Valor de mão de obra"
-                        Text="{Binding ValorMaoDeObra}"/>
+                        Text="ValorMaoDeObra"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="4"
                         Placeholder="Valor de peças"
-                        Text="{Binding ValorPecas}"/>
+                        Text="ValorPecas"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"
                 Text="Cadastrar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"/>
             </Grid>

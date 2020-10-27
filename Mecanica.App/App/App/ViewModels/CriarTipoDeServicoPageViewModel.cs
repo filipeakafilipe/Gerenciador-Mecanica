@@ -24,14 +24,14 @@ namespace App.ViewModels
                     Observacoes = Observacoes
                 };
 
-                try
-                {
-                    await TipoDeServicoService.Cadastrar(tipoDeServico);
-                }
-                catch
-                {
-                    await navigationService.NavigateAsync("MenuPage");
-                }
+                //try
+                //{
+                //    await TipoDeServicoService.Cadastrar(tipoDeServico);
+                //}
+                //catch
+                //{
+                //    await navigationService.NavigateAsync("MenuPage");
+                //}
             });
         }
 

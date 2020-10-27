@@ -18,35 +18,35 @@ namespace App.ViewModels
 
             CadastrarCommand = new Command(async () =>
             {
-                ValorMaoDeObra.Replace(",", ".");
-                ValorPecas.Replace(",", ".");
+                //ValorMaoDeObra.Replace(",", ".");
+                //ValorPecas.Replace(",", ".");
 
-                double valorMaoDeObra = double.Parse(ValorMaoDeObra);
-                double valorPecas = double.Parse(ValorPecas);
+                //double valorMaoDeObra = double.Parse(ValorMaoDeObra);
+                //double valorPecas = double.Parse(ValorPecas);
 
-                var pedido = new Pedido()
-                {
-                    TipoDeServicoId = SelectedItem.Key,
-                    VeiculoId = VeiculoId,
-                    ValorMaoDeObra = valorMaoDeObra,
-                    ValorPecas = valorPecas,
-                    SLA = SelectedSLAItem.Value
-                };
+                //var pedido = new Pedido()
+                //{
+                //    TipoDeServicoId = SelectedItem.Key,
+                //    VeiculoId = VeiculoId,
+                //    ValorMaoDeObra = valorMaoDeObra,
+                //    ValorPecas = valorPecas,
+                //    SLA = SelectedSLAItem.Value
+                //};
 
-                try
-                {
-                    await PedidoService.Cadastrar(pedido);
-                }
-                catch
-                {
-                    await navigationService.NavigateAsync("MenuPage");
-                }
+                //try
+                //{
+                //    await PedidoService.Cadastrar(pedido);
+                //}
+                //catch
+                //{
+                //    await navigationService.NavigateAsync("MenuPage");
+                //}
             });
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            VeiculoId = parameters.GetValue<int>("veiculoId");
+            //VeiculoId = parameters.GetValue<int>("veiculoId");
         }
 
         private int _VeiculoId;
@@ -61,11 +61,11 @@ namespace App.ViewModels
 
         public string ValorPecas { get; set; }
 
-        private Dictionary<int, string> SLAs = new SLAs().Nomes;
+        private Dictionary<int, string> SLAs = new Dictionary<int, string>();
 
         public List<KeyValuePair<int, string>> PickerSLAItemList
         {
-            get => SLAs.ToList();
+            get => new List<KeyValuePair<int, string>>();
         }
 
         private KeyValuePair<int, string> _selectedSLAItem;
@@ -79,7 +79,7 @@ namespace App.ViewModels
 
         public List<KeyValuePair<int, string>> PickerItemList
         {
-            get => new TipoDeServico().PopulaTipos();
+            get => new List<KeyValuePair<int, string>>();
         }
 
         private KeyValuePair<int, string> _selectedItem;
