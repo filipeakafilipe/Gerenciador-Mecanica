@@ -3,6 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="App.Views.MenuClientePage">
-  
+             x:Class="App.Views.MenuClientePage"
+             Title="{Binding Title}">
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label HorizontalTextAlignment="Center" TextColor="Black">Menu de Cliente</Label>
+                <Button Text="Meu Perfil" Command="{Binding PerfilCommand}" BackgroundColor="#2296f3" TextColor="White"/>
+                <Button Text="Meus Veículos" Command="{Binding MeusVeiculosCommand}" BackgroundColor="#2296f3" TextColor="White"/>
+                <Button Text="Minhas Manutenções" Command="{Binding MinhasManutencoesCommand}" BackgroundColor="#2296f3" TextColor="White"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
 </ContentPage>

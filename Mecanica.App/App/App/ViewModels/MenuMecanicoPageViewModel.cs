@@ -4,6 +4,7 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xamarin.Forms;
 
 namespace App.ViewModels
 {
@@ -11,7 +12,14 @@ namespace App.ViewModels
     {
         public MenuMecanicoPageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            var user = Perfil;
 
+            AcompanhamentoPedidosAtuaisCommand = new Command(async () =>
+            {
+                await navigationService.NavigateAsync("AcompanhamentoPedidosAtuaisPage");
+            });
         }
+
+        public Command AcompanhamentoPedidosAtuaisCommand { get; }
     }
 }

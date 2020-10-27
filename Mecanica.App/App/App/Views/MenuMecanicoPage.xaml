@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="App.Views.MenuMecanicoPage">
-  
+             x:Class="App.Views.MenuMecanicoPage"
+             Title="{Binding Title}">
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label HorizontalTextAlignment="Center" TextColor="Black">Menu de Mecânico</Label>
+                <Button Text="Acompanhamento de Manutenções Ativas" Command="{Binding AcompanhamentoPedidosAtuaisCommand}" BackgroundColor="#2296f3" TextColor="White"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
 </ContentPage>

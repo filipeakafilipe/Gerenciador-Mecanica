@@ -53,6 +53,7 @@ namespace App
             containerRegistry.RegisterForNavigation<MinhasManutencoesPage, MinhasManutencoesPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuMecanicoPage, MenuMecanicoPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuClientePage, MenuClientePageViewModel>();
+            containerRegistry.RegisterForNavigation<AcompanhamentoPedidosAtuaisPage, AcompanhamentoPedidosAtuaisPageViewModel>();
         }
     }
 }
