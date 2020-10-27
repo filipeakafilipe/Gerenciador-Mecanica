@@ -24,6 +24,8 @@ namespace App.ViewModels
                 {
                     var user = PerfilService.Logar(usuario).Result;
 
+                    Perfil = user;
+
                     if (user.RoleId == 1)
                     {
                         await navigationService.NavigateAsync("MenuPage");
