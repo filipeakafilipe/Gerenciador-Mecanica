@@ -1,4 +1,6 @@
-﻿using Prism.Commands;
+﻿using App.Modelos;
+using App.Services;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -16,11 +18,37 @@ namespace App.ViewModels
 
             MenuPageCommand = new Command(async () =>
             {
-                await navigationService.NavigateAsync("MenuPage");
+                var usuario = new Perfil() { Login = Usuario, Senha = Senha };
+
+                try
+                {
+                    var user = PerfilService.Logar(usuario).Result;
+
+                    if (user.RoleId == 1)
+                    {
+                        await navigationService.NavigateAsync("MenuPage");
+                    }
+                    if (user.RoleId == 2)
+                    {
+                        await navigationService.NavigateAsync("MenuMecanicoPage");
+                    }
+                    if (user.RoleId == 3)
+                    {
+                        await navigationService.NavigateAsync("MenuClientePage");
+                    }
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("LoginPage");
+                }
             });
         }
 
         public Command MenuPageCommand { get; }
+
+        public string Usuario { get; set; }
+
+        public string Senha { get; set; }
     }
 }
 

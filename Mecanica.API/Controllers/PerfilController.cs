@@ -42,6 +42,11 @@ namespace Mecanica.API.Controllers
         [HttpPost]
         public ActionResult<Perfil> CriarPerfil(Perfil perfil)
         {
+            if(_context.PerfilRepositorio.Get(perfil.Login) != null)
+            {
+                return BadRequest();
+            }
+
             _context.PerfilRepositorio.Adicionar(perfil);
 
             return CreatedAtAction(nameof(GetPerfil), new { id = perfil.Id }, perfil);
@@ -51,6 +56,19 @@ namespace Mecanica.API.Controllers
         public void AtualizarPerfil(Perfil perfil)
         {
             _context.PerfilRepositorio.Atualizar(perfil.Id, perfil);
+        }
+
+        [HttpGet("logar/{login}/{senha}")]
+        public ActionResult<Perfil> Logar(string login, string senha)
+        {
+            var usuario = _context.PerfilRepositorio.Login(login, senha);
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return usuario;
         }
     }
 }

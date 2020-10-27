@@ -37,11 +37,14 @@ namespace Mecanica.Repositorios
         {
             var role = Get(id);
 
-            role = novaRole;
+            if(role != null)
+            {
+                role.Nome = novaRole.Nome;
 
-            db.Entry(role).State = EntityState.Modified;
+                db.Entry(role).State = EntityState.Modified;
 
-            db.SaveChanges();
+                db.SaveChanges();
+            }
         }
     }
 }

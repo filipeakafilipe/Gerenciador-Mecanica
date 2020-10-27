@@ -51,6 +51,8 @@ namespace App
             containerRegistry.RegisterForNavigation<PerfilPage, PerfilPageViewModel>();
             containerRegistry.RegisterForNavigation<MeusVeiculosPage, MeusVeiculosPageViewModel>();
             containerRegistry.RegisterForNavigation<MinhasManutencoesPage, MinhasManutencoesPageViewModel>();
+            containerRegistry.RegisterForNavigation<MenuMecanicoPage, MenuMecanicoPageViewModel>();
+            containerRegistry.RegisterForNavigation<MenuClientePage, MenuClientePageViewModel>();
         }
     }
 }

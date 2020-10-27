@@ -38,14 +38,17 @@ namespace Mecanica.Repositorios
         {
             var pedido = Get(id);
 
-            pedido.TipoDeServicoId = novoPedido.TipoDeServicoId;
-            pedido.ValorMaoDeObra = novoPedido.ValorMaoDeObra;
-            pedido.ValorPecas = novoPedido.ValorPecas;
-            pedido.SLA = novoPedido.SLA;
+            if(pedido != null)
+            {
+                pedido.TipoDeServicoId = novoPedido.TipoDeServicoId;
+                pedido.ValorMaoDeObra = novoPedido.ValorMaoDeObra;
+                pedido.ValorPecas = novoPedido.ValorPecas;
+                pedido.SLA = novoPedido.SLA;
 
-            db.Entry(pedido).State = EntityState.Modified;
+                db.Entry(pedido).State = EntityState.Modified;
 
-            db.SaveChanges();
+                db.SaveChanges();
+            }
         }
 
         public List<Pedido> GetTodos()

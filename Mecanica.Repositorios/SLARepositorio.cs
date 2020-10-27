@@ -37,11 +37,14 @@ namespace Mecanica.Repositorios
         {
             var SLA = Get(id);
 
-            SLA = novoSLA;
+            if(SLA != null)
+            {
+                SLA.Nome = novoSLA.Nome;
 
-            db.Entry(SLA).State = EntityState.Modified;
+                db.Entry(SLA).State = EntityState.Modified;
 
-            db.SaveChanges();
+                db.SaveChanges();
+            }
         }
     }
 }

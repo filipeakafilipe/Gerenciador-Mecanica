@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using App.Modelos;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -16,6 +17,13 @@ namespace App.ViewModels
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }
+        }
+
+        private Perfil _perfil;
+        public Perfil Perfil
+        {
+            get { return _perfil; }
+            set { SetProperty(ref _perfil, value); }
         }
 
         public ViewModelBase(INavigationService navigationService)
