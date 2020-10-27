@@ -15,11 +15,12 @@
         <StackLayout Orientation="Vertical">
             <Image Source="logo" WidthRequest="250"></Image>
 
-            <Entry x:Name="txtUser" Placeholder="Usuário" TextColor="Black" ></Entry>
 
-            <Entry x:Name="txtPass" Placeholder="Senha" TextColor="Black" IsPassword="True"></Entry>
+            <Entry x:Name="txtUser" Placeholder="Usuário" TextColor="Black" Margin="30,0" ></Entry>
 
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+            <Entry x:Name="txtPass" Placeholder="Senha" TextColor="Black" IsPassword="True" Margin="30,0"></Entry>
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Margin="30,0">
                 <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center">
                     <CheckBox x:Name="chkLembrar" Color="#2296f3" ></CheckBox>
                 </StackLayout>
@@ -32,5 +33,5 @@
 
         </StackLayout>
     </ScrollView>
-    
+
 </ContentPage>
