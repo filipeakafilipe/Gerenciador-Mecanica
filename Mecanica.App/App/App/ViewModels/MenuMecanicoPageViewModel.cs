@@ -12,6 +12,8 @@ namespace App.ViewModels
     {
         public MenuMecanicoPageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = "Menu";
+
             AcompanhamentoPedidosAtuaisCommand = new Command(async () =>
             {
                 await navigationService.NavigateAsync("AcompanhamentoPedidosAtuaisPage");

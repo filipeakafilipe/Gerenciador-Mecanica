@@ -9,10 +9,9 @@
     <StackLayout>
         <ScrollView>
             <StackLayout>
-                <Label HorizontalTextAlignment="Center" TextColor="Black">Menu de Cliente</Label>
-                <Button Text="Meu Perfil" Command="{Binding PerfilCommand}" BackgroundColor="#2296f3" TextColor="White"/>
-                <Button Text="Meus Veículos" Command="{Binding MeusVeiculosCommand}" BackgroundColor="#2296f3" TextColor="White"/>
-                <Button Text="Minhas Manutenções" Command="{Binding MinhasManutencoesCommand}" BackgroundColor="#2296f3" TextColor="White"/>
+                <Button Text="Meu Perfil" Command="{Binding PerfilCommand}" Margin="20, 7, 20, 0" BackgroundColor="#2296f3" TextColor="White"/>
+                <Button Text="Meus Veículos" Command="{Binding MeusVeiculosCommand}" Margin="20, 0" BackgroundColor="#2296f3" TextColor="White"/>
+                <Button Text="Minhas Manutenções" Command="{Binding MinhasManutencoesCommand}" Margin="20, 0" BackgroundColor="#2296f3" TextColor="White"/>
             </StackLayout>
         </ScrollView>
     </StackLayout>

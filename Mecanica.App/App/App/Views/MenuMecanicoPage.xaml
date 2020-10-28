@@ -9,8 +9,7 @@
     <StackLayout>
         <ScrollView>
             <StackLayout>
-                <Label HorizontalTextAlignment="Center" TextColor="Black">Menu de Mecânico</Label>
-                <Button Text="Acompanhamento de Manutenções Ativas" Command="{Binding AcompanhamentoPedidosAtuaisCommand}" BackgroundColor="#2296f3" TextColor="White"/>
+                <Button Text="Acompanhamento de Manutenções Ativas" Command="{Binding AcompanhamentoPedidosAtuaisCommand}" Margin="20, 7, 20, 0" BackgroundColor="#2296f3" TextColor="White"/>
             </StackLayout>
         </ScrollView>
     </StackLayout>
