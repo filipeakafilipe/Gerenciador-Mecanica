@@ -10,9 +10,9 @@
         <StackLayout Orientation="Vertical">
             <Label Text="Injkar Centro Automotivo" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" ></Label>
 
-            <Label Text="{Binding Usuario.Nome, StringFormat='Nome: {0}'}" Margin="30,0,30,0" FontSize="18" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
-            <Label Text="{Binding Usuario.Telefone, StringFormat='Telefone: {0}'}" Margin="30,0,30,0" FontSize="18" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
-            <Label Text="{Binding Usuario.Login, StringFormat='Login: {0}'}" FontSize="18" Margin="30,0,30,0" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
+            <Label Text="{Binding Usuario.Nome, StringFormat='Nome: {0}'}" Margin="30,0,30,0" FontSize="18" XAlign="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
+            <Label Text="{Binding Usuario.Telefone, StringFormat='Telefone: {0}'}" Margin="30,0,30,0" FontSize="18" XAlign="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
+            <Label Text="{Binding Usuario.Login, StringFormat='Login: {0}'}" FontSize="18" Margin="30,0,30,0" XAlign="Center" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
         </StackLayout>
     </ScrollView>
 

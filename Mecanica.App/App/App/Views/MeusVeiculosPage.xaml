@@ -9,8 +9,51 @@
 
 
     <ScrollView>
-        <StackLayout Orientation="Vertical">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
+            <Label FontSize="18" HorizontalTextAlignment="Center" Text="{Binding Quantidade, StringFormat='{0} veículos cadastrados'}" TextColor="Black"></Label>
+
+            <CollectionView ItemsSource="{Binding Veiculos}"
+                                SelectionMode="Single"
+                                SelectedItem="{Binding SelectedVeiculo}"
+                                SelectionChangedCommand="{Binding SelectedVeiculoChangeCommand}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Margin="10,20,0,0">
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start" >
+                                    <Image HorizontalOptions="Start" Source="car2" WidthRequest="120"></Image>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center" Margin="15,0,0,0">
+                                    <Label FontSize="18" Text="{Binding Nome}" TextColor="Black" FontAttributes="Bold"></Label>
+                                    <Label Text="{Binding Ano, StringFormat='Ano: {0}'}" FontSize="Medium" VerticalTextAlignment="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                                    <Label Text="{Binding Kilometragem, StringFormat='Kilometragem: {0} Km'}" FontSize="Medium" VerticalTextAlignment="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                                    <Label Text="{Binding Placa, StringFormat='Placa: {0}'}" FontSize="Medium" VerticalTextAlignment="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ScrollView>
+
+    <!--<ScrollView>
+        <StackLayout Orientation="Vertical">
             <Label Text="Veículos de Neymar Junior" FontSize="25" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="30,0,30,0" TextColor="Black"></Label>
             <Label x:Name="Veiculos" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="LightGray" TextColor="White" ></Label>
             <Label x:Name="Veiculos2" FontSize="20" HorizontalTextAlignment="Center" Text="3 Veículos Cadastrados" HorizontalOptions="Fill"  TextColor="Black"></Label>
@@ -24,8 +67,6 @@
                     <Label Text="2010/2011  63.000km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                     <Label Text="HGX-1357" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                 </StackLayout>
-
-
             </StackLayout>
 
             <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Margin="10,20,0,0">
@@ -48,12 +89,8 @@
                     <Label Text="2019/2020  3.287km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                     <Label Text="XXX-1237" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
                 </StackLayout>
-
             </StackLayout>
-
-
-
-
         </StackLayout>
-    </ScrollView>
+    </ScrollView>-->
+
 </ContentPage>

@@ -12,7 +12,7 @@ namespace App.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
-        public LoginPageViewModel(INavigationService navigationService) : base(navigationService)
+        public LoginPageViewModel(INavigationService navigationService, IUsuarioLogado usuarioLogadoService) : base(navigationService)
         {
             Title = "Entrar";
 
@@ -24,6 +24,8 @@ namespace App.ViewModels
                 {
                     var user = PerfilService.Logar(usuario).Result;
 
+                        usuarioLogadoService.SetUsuarioLogado(user);
+
                     if (user.RoleId == 1)
                     {
                         await navigationService.NavigateAsync("MenuPage");
@@ -34,10 +36,7 @@ namespace App.ViewModels
                     }
                     if (user.RoleId == 3)
                     {
-                        var dados = new NavigationParameters();
-                        dados.Add("usuario", user);
-
-                        await navigationService.NavigateAsync("MenuClientePage", dados);
+                        await navigationService.NavigateAsync("MenuClientePage");
                     }
                 }
                 catch

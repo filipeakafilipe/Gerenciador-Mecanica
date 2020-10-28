@@ -1,4 +1,5 @@
 ﻿using App.Modelos;
+using App.Services;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -10,22 +11,13 @@ namespace App.ViewModels
 {
     public class PerfilPageViewModel : ViewModelBase
     {
-        public PerfilPageViewModel(INavigationService navigationService) : base(navigationService)
+        public PerfilPageViewModel(INavigationService navigationService, IUsuarioLogado usuarioLogadoService) : base(navigationService)
         {
             Title = "Meu Perfil";
+
+            Usuario = usuarioLogadoService.GetUsuarioLogado();
         }
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
-        {
-            Usuario = parameters.GetValue<Perfil>("usuario");
-        }
-
-        private Perfil _Usuario;
-
-        public Perfil Usuario
-        {
-            get { return _Usuario; }
-            set { SetProperty(ref _Usuario, value); }
-        }
+        public Perfil Usuario { get; set; }
     }
 }

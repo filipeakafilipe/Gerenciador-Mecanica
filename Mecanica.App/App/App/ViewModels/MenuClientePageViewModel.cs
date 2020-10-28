@@ -17,32 +17,18 @@ namespace App.ViewModels
 
             PerfilCommand = new Command(async () =>
             {
-                var dados = new NavigationParameters();
-                dados.Add("usuario", Usuario);
-
-                await navigationService.NavigateAsync("PerfilPage", dados);
+                await navigationService.NavigateAsync("PerfilPage");
             });
 
             MeusVeiculosCommand = new Command(async () =>
             {
-                var dados = new NavigationParameters();
-                dados.Add("usuarioId", Usuario.Id);
-
-                await navigationService.NavigateAsync("MeusVeiculosPage", dados);
+                await navigationService.NavigateAsync("MeusVeiculosPage");
             });
 
             MinhasManutencoesCommand = new Command(async () =>
             {
-                //var dados = new NavigationParameters();
-                //dados.Add();
-
-                await navigationService.NavigateAsync("MinhasManutencoesPage"/*, dados*/);
+                await navigationService.NavigateAsync("MinhasManutencoesPage");
             });
-        }
-
-        public override void OnNavigatedTo(INavigationParameters parameters)
-        {
-            Usuario = parameters.GetValue<Perfil>("usuario");
         }
 
         public Command PerfilCommand { get; }
@@ -50,13 +36,5 @@ namespace App.ViewModels
         public Command MeusVeiculosCommand { get; }
 
         public Command MinhasManutencoesCommand { get; }
-
-        private Perfil _Usuario;
-
-        public Perfil Usuario
-        {
-            get { return _Usuario; }
-            set { SetProperty(ref _Usuario, value); }
-        }
     }
 }
