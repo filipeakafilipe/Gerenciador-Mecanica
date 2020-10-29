@@ -26,19 +26,24 @@
                 <Picker Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Title="Selecionar tipo de serviço" 
                         ItemDisplayBinding="{Binding Value}"
                         ItemsSource="{Binding PickerItemList}"
-                        SelectedItem="{Binding SelectedItem}"/>
+                        SelectedItem="{Binding SelectedItem}"
+                        Margin="30,0,30,0"/>
                 <Picker Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Title="Selecionar SLA" 
                         ItemDisplayBinding="{Binding Value}"
                         ItemsSource="{Binding PickerSLAItemList}"
-                        SelectedItem="{Binding SelectedSLAItem}"/>
+                        SelectedItem="{Binding SelectedSLAItem}"
+                        Margin="30,0,30,0"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="3"
                         Placeholder="Valor de mão de obra"
-                        Text="ValorMaoDeObra"/>
+                        Text="$ ValorMaoDeObra "
+                        Margin="30,0,30,0"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="4"
                         Placeholder="Valor de peças"
-                        Text="ValorPecas"/>
-                <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"
-                Text="Cadastrar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"/>
+                        Text="$ ValorPecas"
+                        Margin="30,0,30,0"/>
+                <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5"
+                Text="Cadastrar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"
+                        Margin="30,0,30,0"/>
             </Grid>
 
         </ScrollView>

@@ -20,12 +20,15 @@
 
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="1"
                         Placeholder="Nome"
-                        Text="Nome"/>
+                        Text="Nome"
+                        Margin="30,0,30,0"/>
                 <Editor Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="2"
                         Placeholder="Observações"
-                        Text="Observacoes"/>
+                        Text="Observacoes"
+                        Margin="30,0,30,0"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="3"
-                        Text="Cadastrar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"/>
+                        Text="Cadastrar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"
+                        Margin="30,0,30,0"/>
             </Grid>
 
         </ScrollView>
