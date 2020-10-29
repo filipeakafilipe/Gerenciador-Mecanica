@@ -26,7 +26,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
               
-                <Picker Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Margin="30,-15,30,0" Title="Selecionar Perfil de Usuário" 
+                <Picker Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Margin="30,-15,30,0" Title="Perfil de Usuário" 
                 ItemDisplayBinding="{Binding Value}"
                 ItemsSource="{Binding PickerItemList}"
                 SelectedItem="{Binding SelectedItem}"/>

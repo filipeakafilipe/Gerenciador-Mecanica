@@ -18,6 +18,11 @@ namespace Mecanica.Repositorios
             return db.SLAs.Where(v => v.Id == id).FirstOrDefault();
         }
 
+        public List<SLA> GetTodos()
+        {
+            return db.SLAs.ToList();
+        }
+
         public void Adicionar(SLA sla)
         {
             db.SLAs.Add(sla);

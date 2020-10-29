@@ -13,17 +13,17 @@ namespace Mecanica.API.Controllers
     [ApiController]
     public class PerfilController : ControllerBase
     {
-        private UnidadeDeTrabalho _context;
+        private PerfilRepositorio _context;
 
         public PerfilController()
         {
-            _context = new UnidadeDeTrabalho();
+            _context = new PerfilRepositorio();
         }
 
         [HttpGet("{id}")]
         public ActionResult<Perfil> GetPerfil(int id)
         {
-            var perfil = _context.PerfilRepositorio.Get(id);
+            var perfil = _context.Get(id);
 
             if (perfil == null)
             {
@@ -36,18 +36,18 @@ namespace Mecanica.API.Controllers
         [HttpGet("todos")]
         public ActionResult<List<Perfil>> GetTodosPerfis()
         {
-            return _context.PerfilRepositorio.GetTodos();
+            return _context.GetTodos();
         }
 
         [HttpPost]
         public ActionResult<Perfil> CriarPerfil(Perfil perfil)
         {
-            if(_context.PerfilRepositorio.Get(perfil.Login) != null)
+            if(_context.Get(perfil.Login) != null)
             {
                 return BadRequest();
             }
 
-            _context.PerfilRepositorio.Adicionar(perfil);
+            _context.Adicionar(perfil);
 
             return CreatedAtAction(nameof(GetPerfil), new { id = perfil.Id }, perfil);
         }
@@ -55,13 +55,13 @@ namespace Mecanica.API.Controllers
         [HttpPut]
         public void AtualizarPerfil(Perfil perfil)
         {
-            _context.PerfilRepositorio.Atualizar(perfil.Id, perfil);
+            _context.Atualizar(perfil.Id, perfil);
         }
 
         [HttpGet("logar/{login}/{senha}")]
         public ActionResult<Perfil> Logar(string login, string senha)
         {
-            var usuario = _context.PerfilRepositorio.Login(login, senha);
+            var usuario = _context.Login(login, senha);
 
             if (usuario == null)
             {

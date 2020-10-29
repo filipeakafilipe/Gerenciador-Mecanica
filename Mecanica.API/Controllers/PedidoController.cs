@@ -13,17 +13,17 @@ namespace Mecanica.API.Controllers
     [ApiController]
     public class PedidoController : ControllerBase
     {
-        private UnidadeDeTrabalho _context;
+        private PedidoRepositorio _context;
 
         public PedidoController()
         {
-            _context = new UnidadeDeTrabalho();
+            _context = new PedidoRepositorio();
         }
 
         [HttpGet("{id}")]
         public ActionResult<Pedido> GetPedido(int id)
         {
-            var pedido = _context.PedidoRepositorio.Get(id);
+            var pedido = _context.Get(id);
 
             if (pedido == null)
             {
@@ -37,7 +37,7 @@ namespace Mecanica.API.Controllers
         [HttpPost]
         public ActionResult<Perfil> CriarPerfil(Pedido pedido)
         {
-            _context.PedidoRepositorio.Adicionar(pedido);
+            _context.Adicionar(pedido);
 
             return CreatedAtAction(nameof(GetPedido), new { id = pedido.Id }, pedido);
         }
@@ -45,25 +45,25 @@ namespace Mecanica.API.Controllers
         [HttpGet("todos")]
         public ActionResult<List<Pedido>> GetTodosPedidos()
         {
-            return _context.PedidoRepositorio.GetTodos();
+            return _context.GetTodos();
         }
 
         [HttpPut]
         public void AtualizarPedido(Pedido pedido)
         {
-            _context.PedidoRepositorio.Atualizar(pedido.Id, pedido);
+            _context.Atualizar(pedido.Id, pedido);
         }
 
         [HttpGet("cliente/{idCliente}")]
         public ActionResult<List<Pedido>> GetPedidosDoCliente(int idCliente)
         {
-            return _context.PedidoRepositorio.GetPedidosDoCliente(idCliente);
+            return _context.GetPedidosDoCliente(idCliente);
         }
 
         [HttpGet("atuais")]
         public ActionResult<List<Pedido>> GetPedidosNaoFinalizados()
         {
-            return _context.PedidoRepositorio.GetPedidosNaoFinalizados();
+            return _context.GetPedidosNaoFinalizados();
         }
     }
 }
