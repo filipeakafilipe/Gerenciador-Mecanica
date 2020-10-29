@@ -4,11 +4,8 @@ using System.Text;
 
 namespace Mecanica.Modelos
 {
-    public class Administrador : Perfil
+    public class Connection
     {
-        public Administrador()
-        {
-
-        }
+        public string DefaultConnection { get; set; }
     }
 }
