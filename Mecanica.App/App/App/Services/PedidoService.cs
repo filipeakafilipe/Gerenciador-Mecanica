@@ -28,5 +28,10 @@ namespace App.Services
         {
             return $"{Base.Uri}api/pedido/cliente/{idCliente}".GetJsonAsync<List<Pedido>>();
         }
+
+        public static Task<List<Pedido>> GetPedidosNaoFinalizados()
+        {
+            return $"{Base.Uri}api/pedido/atuais".GetJsonAsync<List<Pedido>>();
+        }
     }
 }

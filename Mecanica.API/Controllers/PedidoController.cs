@@ -59,5 +59,11 @@ namespace Mecanica.API.Controllers
         {
             return _context.PedidoRepositorio.GetPedidosDoCliente(idCliente);
         }
+
+        [HttpGet("atuais")]
+        public ActionResult<List<Pedido>> GetPedidosNaoFinalizados()
+        {
+            return _context.PedidoRepositorio.GetPedidosNaoFinalizados();
+        }
     }
 }

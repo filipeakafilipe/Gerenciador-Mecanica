@@ -1,4 +1,5 @@
-﻿using App.Modelos;
+﻿using App.Enum;
+using App.Modelos;
 using App.Services;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -26,15 +27,15 @@ namespace App.ViewModels
 
                         usuarioLogadoService.SetUsuarioLogado(user);
 
-                    if (user.RoleId == 1)
+                    if (user.RoleId == (int)RolesEnum.Administrador)
                     {
                         await navigationService.NavigateAsync("MenuPage");
                     }
-                    if (user.RoleId == 2)
+                    if (user.RoleId == (int)RolesEnum.Mecanico)
                     {
                         await navigationService.NavigateAsync("MenuMecanicoPage");
                     }
-                    if (user.RoleId == 3)
+                    if (user.RoleId == (int)RolesEnum.Cliente)
                     {
                         await navigationService.NavigateAsync("MenuClientePage");
                     }
