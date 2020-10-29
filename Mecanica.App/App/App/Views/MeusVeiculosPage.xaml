@@ -52,45 +52,4 @@
         </Grid>
     </ScrollView>
 
-    <!--<ScrollView>
-        <StackLayout Orientation="Vertical">
-            <Label Text="Veículos de Neymar Junior" FontSize="25" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="30,0,30,0" TextColor="Black"></Label>
-            <Label x:Name="Veiculos" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="LightGray" TextColor="White" ></Label>
-            <Label x:Name="Veiculos2" FontSize="20" HorizontalTextAlignment="Center" Text="3 Veículos Cadastrados" HorizontalOptions="Fill"  TextColor="Black"></Label>
-            <Label x:Name="Veiculos3" FontSize="5" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="#2296f3" TextColor="White" ></Label>
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Margin="10,0,0,0">
-                <StackLayout  Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start" >
-                    <Image  Source="car2" WidthRequest="120" ></Image>
-                </StackLayout>
-                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center" Margin="15,0,0,0">
-                    <Label x:Name="Car1" FontSize="18" Text="Fiat Palio 1.0" BackgroundColor="White" TextColor="Black" ></Label>
-                    <Label Text="2010/2011  63.000km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                    <Label Text="HGX-1357" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                </StackLayout>
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Margin="10,20,0,0">
-                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start" >
-                    <Image HorizontalOptions="Start" Source="car2" WidthRequest="120"></Image>
-                </StackLayout>
-                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center" Margin="15,0,0,0">
-                    <Label x:Name="Car2" FontSize="18" Text="Ford Ka 1.6" BackgroundColor="White" TextColor="Black"></Label>
-                    <Label Text="2013/2014  43.287km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                    <Label Text="QYW-2557" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                </StackLayout>
-
-            </StackLayout>
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Margin="10,20,0,0">
-                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Start" >
-                    <Image Source="car2" WidthRequest="120"></Image>
-                </StackLayout>
-                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center" Margin="15,0,0,0">
-                    <Label x:Name="Car3" FontSize="18" Text="Fiat Toro 2.0"  BackgroundColor="White" TextColor="Black"></Label>
-                    <Label Text="2019/2020  3.287km" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                    <Label Text="XXX-1237" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
-                </StackLayout>
-            </StackLayout>
-        </StackLayout>
-    </ScrollView>-->
-
 </ContentPage>

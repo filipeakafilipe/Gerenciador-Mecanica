@@ -38,7 +38,7 @@ namespace Mecanica.Repositorios
         {
             var pedido = Get(id);
 
-            if(pedido != null)
+            if (pedido != null)
             {
                 pedido.TipoDeServicoId = novoPedido.TipoDeServicoId;
                 pedido.ValorMaoDeObra = novoPedido.ValorMaoDeObra;
@@ -53,6 +53,8 @@ namespace Mecanica.Repositorios
 
         public List<Pedido> GetTodos()
         {
+            try
+            {
             var tiposDeServico = db.TipoDeServicos.ToList();
 
             var veiculos = db.Veiculos.ToList();
@@ -66,6 +68,27 @@ namespace Mecanica.Repositorios
             });
 
             return pedidos;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public List<Pedido> GetPedidosDoCliente(int idCliente)
+        {
+            try
+            {
+                var veiculos = new VeiculoRepositorio().GetVeiculoCliente(idCliente);
+
+                var pedidos = db.Pedidos.ToList();
+
+                return pedidos.Where(p => veiculos.Any(v => v.Id == p.VeiculoId)).ToList();
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }
