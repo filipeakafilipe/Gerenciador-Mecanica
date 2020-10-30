@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Mecanica.Repositorios
 {
-    public class PerfilRepositorio : BaseRepositorio
+    public class PerfilRepositorio : BaseRepositorio, IPerfilRepository<Perfil>
     {
         public PerfilRepositorio() : base()
         {

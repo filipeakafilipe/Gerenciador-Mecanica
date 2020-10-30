@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using Mecanica.Modelos;
+using Mecanica.Repositorios;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -57,6 +59,11 @@ namespace Mecanica.API
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+
+            services.AddSingleton<IPerfilRepository<Perfil>, PerfilRepositorio>();
+            services.AddSingleton<IVeiculoRepository<Veiculo>, VeiculoRepositorio>();
+            services.AddSingleton<IPedidoRepository<Pedido>, PedidoRepositorio>();
+            services.AddSingleton<ITipoDeServicoRepository<TipoDeServico>, TipoDeServicoRepositorio>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

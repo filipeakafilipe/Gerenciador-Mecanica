@@ -10,50 +10,57 @@ namespace App.Services
     {
         public static List<Manutencao> GetManutencoesCliente(Perfil usuario)
         {
-            var pedidos = PedidoService.GetPedidosDoCliente(usuario.Id).Result;
-
-            var veiculosDoCliente = VeiculoService.GetVeiculosCliente(usuario.Id).Result;
-
-            var tiposDeServico = TipoDeServicoService.GetTipoDeServicos().Result;
-
-            var manutencoes = new List<Manutencao>();
-
-            foreach (var pedido in pedidos)
+            try
             {
-                var manutencao = new Manutencao();
+                var pedidos = PedidoService.GetPedidosDoCliente(usuario.Id).Result;
 
-                foreach (var veiculo in veiculosDoCliente)
+                var veiculosDoCliente = VeiculoService.GetVeiculosCliente(usuario.Id).Result;
+
+                var tiposDeServico = TipoDeServicoService.GetTipoDeServicos().Result;
+
+                var manutencoes = new List<Manutencao>();
+
+                foreach (var pedido in pedidos)
                 {
-                    if (veiculo.Id == pedido.VeiculoId)
+                    var manutencao = new Manutencao();
+
+                    foreach (var veiculo in veiculosDoCliente)
                     {
-                        manutencao.Nome = veiculo.Nome;
-                        manutencao.Placa = veiculo.Placa;
-
-                        foreach (var tipo in tiposDeServico)
+                        if (veiculo.Id == pedido.VeiculoId)
                         {
-                            if (tipo.Id == pedido.TipoDeServicoId)
+                            manutencao.Nome = veiculo.Nome;
+                            manutencao.Placa = veiculo.Placa;
+
+                            foreach (var tipo in tiposDeServico)
                             {
-                                manutencao.TipoDeServico = tipo.Nome;
+                                if (tipo.Id == pedido.TipoDeServicoId)
+                                {
+                                    manutencao.TipoDeServico = tipo.Nome;
 
-                                manutencao.Status = pedido.SLA;
+                                    manutencao.Status = pedido.SLA;
 
-                                manutencao.Valor = pedido.ValorMaoDeObra + pedido.ValorPecas;
+                                    manutencao.Valor = pedido.ValorMaoDeObra + pedido.ValorPecas;
 
-                                manutencoes.Add(manutencao);
+                                    manutencoes.Add(manutencao);
 
-                                break;
+                                    break;
+                                }
                             }
                         }
-                    }
 
-                    if (!string.IsNullOrEmpty(manutencao.Placa))
-                    {
-                        break;
+                        if (!string.IsNullOrEmpty(manutencao.Placa))
+                        {
+                            break;
+                        }
                     }
                 }
-            }
 
-            return manutencoes.OrderBy(m => m.Placa).ThenBy(m => m.Valor).ToList();
+                return manutencoes.OrderBy(m => m.Placa).ThenBy(m => m.Valor).ToList();
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
     }
 }

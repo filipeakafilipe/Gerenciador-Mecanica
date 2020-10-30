@@ -14,17 +14,39 @@ namespace App.Services
     {
         public static async Task Cadastrar(Perfil perfil)
         {
-            await $"{Base.Uri}api/perfil".PostJsonAsync(perfil);
+            try
+            {
+                await $"{Base.Uri}api/perfil".PostJsonAsync(perfil);
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
 
         public static Task<List<Perfil>> GetPerfis()
         {
-            return $"{Base.Uri}api/perfil/todos".GetJsonAsync<List<Perfil>>();
+            try
+            {
+                return $"{Base.Uri}api/perfil/todos".GetJsonAsync<List<Perfil>>();
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
 
         public static async Task Alterar(Perfil perfil)
         {
-            await $"{Base.Uri}api/perfil/".PutJsonAsync(perfil);
+            try
+            {
+                await $"{Base.Uri}api/perfil/".PutJsonAsync(perfil);
+            }
+            catch
+            {
+                throw new Exception();
+            }
+
         }
 
         public static async Task<Perfil> Logar(Perfil perfil)
@@ -39,7 +61,7 @@ namespace App.Services
             {
                 throw new Exception();
             }
-            catch
+            catch (Exception ex)
             {
                 throw new Exception();
             }

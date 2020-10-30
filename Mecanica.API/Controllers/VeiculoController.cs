@@ -13,11 +13,11 @@ namespace Mecanica.API.Controllers
     [ApiController]
     public class VeiculoController : ControllerBase
     {
-        private VeiculoRepositorio _context;
+        private readonly IVeiculoRepository<Veiculo> _context;
 
-        public VeiculoController()
+        public VeiculoController(IVeiculoRepository<Veiculo> context)
         {
-            _context = new VeiculoRepositorio();
+            _context = context;
         }
 
         [HttpGet("{id}")]
@@ -49,9 +49,16 @@ namespace Mecanica.API.Controllers
         [HttpPost]
         public ActionResult<Veiculo> CriarVeiculo(Veiculo veiculo)
         {
-            _context.Adicionar(veiculo);
+            try
+            {
+                _context.Adicionar(veiculo);
 
-            return CreatedAtAction(nameof(GetVeiculo), new { id = veiculo.Id }, veiculo);
+                return CreatedAtAction(nameof(GetVeiculo), new { id = veiculo.Id }, veiculo);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("todos")]
@@ -61,9 +68,18 @@ namespace Mecanica.API.Controllers
         }
 
         [HttpPut]
-        public void AtualizarPerfil(Veiculo veiculo)
+        public ActionResult AtualizarPerfil(Veiculo veiculo)
         {
-            _context.Atualizar(veiculo.Id, veiculo);
+            try
+            {
+                _context.Atualizar(veiculo.Id, veiculo);
+
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
     }
 }

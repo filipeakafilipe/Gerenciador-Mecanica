@@ -13,11 +13,11 @@ namespace Mecanica.API.Controllers
     [ApiController]
     public class PedidoController : ControllerBase
     {
-        private PedidoRepositorio _context;
+        private readonly IPedidoRepository<Pedido> _context;
 
-        public PedidoController()
+        public PedidoController(IPedidoRepository<Pedido> context)
         {
-            _context = new PedidoRepositorio();
+            _context = context;
         }
 
         [HttpGet("{id}")]
@@ -37,9 +37,16 @@ namespace Mecanica.API.Controllers
         [HttpPost]
         public ActionResult<Perfil> CriarPerfil(Pedido pedido)
         {
-            _context.Adicionar(pedido);
+            try
+            {
+                _context.Adicionar(pedido);
 
-            return CreatedAtAction(nameof(GetPedido), new { id = pedido.Id }, pedido);
+                return CreatedAtAction(nameof(GetPedido), new { id = pedido.Id }, pedido);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("todos")]
@@ -49,9 +56,18 @@ namespace Mecanica.API.Controllers
         }
 
         [HttpPut]
-        public void AtualizarPedido(Pedido pedido)
+        public ActionResult AtualizarPedido(Pedido pedido)
         {
-            _context.Atualizar(pedido.Id, pedido);
+            try
+            {
+                _context.Atualizar(pedido.Id, pedido);
+
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("cliente/{idCliente}")]

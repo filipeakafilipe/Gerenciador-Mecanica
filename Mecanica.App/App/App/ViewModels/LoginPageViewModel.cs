@@ -40,7 +40,7 @@ namespace App.ViewModels
                         await navigationService.NavigateAsync("MenuClientePage");
                     }
                 }
-                catch
+                catch(Exception ex)
                 {
                     await navigationService.NavigateAsync("LoginPage");
                 }

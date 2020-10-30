@@ -11,27 +11,62 @@ namespace App.Services
     {
         public static async Task Cadastrar(Pedido pedido)
         {
-            await $"{Base.Uri}api/pedido".PostJsonAsync(pedido);
+            try
+            {
+                await $"{Base.Uri}api/pedido".PostJsonAsync(pedido);
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
 
         public static Task<List<Pedido>> GetPedidos()
         {
-            return $"{Base.Uri}api/pedido/todos".GetJsonAsync<List<Pedido>>();
+            try
+            {
+                return $"{Base.Uri}api/pedido/todos".GetJsonAsync<List<Pedido>>();
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
 
         public static async Task Alterar(Pedido pedido)
         {
-            await $"{Base.Uri}api/pedido/".PutJsonAsync(pedido);
+            try
+            {
+                await $"{Base.Uri}api/pedido/".PutJsonAsync(pedido);
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
 
         public static Task<List<Pedido>> GetPedidosDoCliente(int idCliente)
         {
-            return $"{Base.Uri}api/pedido/cliente/{idCliente}".GetJsonAsync<List<Pedido>>();
+            try
+            {
+                return $"{Base.Uri}api/pedido/cliente/{idCliente}".GetJsonAsync<List<Pedido>>();
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
 
         public static Task<List<Pedido>> GetPedidosNaoFinalizados()
         {
-            return $"{Base.Uri}api/pedido/atuais".GetJsonAsync<List<Pedido>>();
+            try
+            {
+                return $"{Base.Uri}api/pedido/atuais".GetJsonAsync<List<Pedido>>();
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
     }
 }

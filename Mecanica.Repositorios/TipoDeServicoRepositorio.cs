@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Mecanica.Repositorios
 {
-    public class TipoDeServicoRepositorio : BaseRepositorio
+    public class TipoDeServicoRepositorio : BaseRepositorio, ITipoDeServicoRepository<TipoDeServico>
     {
         public TipoDeServicoRepositorio():base()
         {

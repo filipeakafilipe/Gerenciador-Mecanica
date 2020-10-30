@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Mecanica.Repositorios
 {
-    public class PedidoRepositorio : BaseRepositorio
+    public class PedidoRepositorio : BaseRepositorio, IPedidoRepository<Pedido>
     {
         public PedidoRepositorio() : base()
         {

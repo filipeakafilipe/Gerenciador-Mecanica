@@ -13,11 +13,11 @@ namespace Mecanica.API.Controllers
     [ApiController]
     public class PerfilController : ControllerBase
     {
-        private PerfilRepositorio _context;
+        private readonly IPerfilRepository<Perfil> _context;
 
-        public PerfilController()
+        public PerfilController(IPerfilRepository<Perfil> context)
         {
-            _context = new PerfilRepositorio();
+            _context = context;
         }
 
         [HttpGet("{id}")]
@@ -42,20 +42,36 @@ namespace Mecanica.API.Controllers
         [HttpPost]
         public ActionResult<Perfil> CriarPerfil(Perfil perfil)
         {
-            if(_context.Get(perfil.Login) != null)
+            if (_context.Get(perfil.Login) != null)
             {
                 return BadRequest();
             }
 
-            _context.Adicionar(perfil);
+            try
+            {
+                _context.Adicionar(perfil);
 
-            return CreatedAtAction(nameof(GetPerfil), new { id = perfil.Id }, perfil);
+                return CreatedAtAction(nameof(GetPerfil), new { id = perfil.Id }, perfil);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         [HttpPut]
-        public void AtualizarPerfil(Perfil perfil)
+        public ActionResult AtualizarPerfil(Perfil perfil)
         {
-            _context.Atualizar(perfil.Id, perfil);
+            try
+            {
+                _context.Atualizar(perfil.Id, perfil);
+
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("logar/{login}/{senha}")]

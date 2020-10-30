@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Mecanica.Repositorios
 {
-    public class VeiculoRepositorio : BaseRepositorio
+    public class VeiculoRepositorio : BaseRepositorio, IVeiculoRepository<Veiculo>
     {
         public VeiculoRepositorio() : base()
         {

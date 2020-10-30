@@ -13,11 +13,13 @@ namespace Mecanica.API.Controllers
     [ApiController]
     public class TipoDeServicoController : ControllerBase
     {
-        private TipoDeServicoRepositorio _context;
+        private readonly ITipoDeServicoRepository<TipoDeServico> _context;
 
-        public TipoDeServicoController()
+        //private TipoDeServicoRepositorio _context;
+
+        public TipoDeServicoController(ITipoDeServicoRepository<TipoDeServico> context)
         {
-            _context = new TipoDeServicoRepositorio();
+            _context = context;
         }
 
         [HttpGet("{id}")]
@@ -36,9 +38,16 @@ namespace Mecanica.API.Controllers
         [HttpPost]
         public ActionResult<TipoDeServico> CriarPerfil(TipoDeServico tipoDeServico)
         {
-            _context.Adicionar(tipoDeServico);
+            try
+            {
+                _context.Adicionar(tipoDeServico);
 
-            return CreatedAtAction(nameof(GetTipoDeServico), new { id = tipoDeServico.Id }, tipoDeServico);
+                return CreatedAtAction(nameof(GetTipoDeServico), new { id = tipoDeServico.Id }, tipoDeServico);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("todos")]
@@ -48,9 +57,18 @@ namespace Mecanica.API.Controllers
         }
 
         [HttpPut]
-        public void AtualizarTipoDeServico(TipoDeServico tipoDeServico)
+        public ActionResult AtualizarTipoDeServico(TipoDeServico tipoDeServico)
         {
-            _context.Atualizar(tipoDeServico.Id, tipoDeServico);
+            try
+            {
+                _context.Atualizar(tipoDeServico.Id, tipoDeServico);
+
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
     }
 }
