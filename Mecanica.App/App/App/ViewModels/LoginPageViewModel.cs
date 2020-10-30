@@ -23,82 +23,28 @@ namespace App.ViewModels
 
                 try
                 {
+                    var user = PerfilService.Logar(usuario).Result;
 
-                    //var user = PerfilService.Logar(usuario).Result;
+                    usuarioLogadoService.SetUsuarioLogado(user);
 
-                    //usuarioLogadoService.SetUsuarioLogado(user);
-
-                    var user = usuario;
-                    user.Id = 1;
-                    user.Nome = "Filipe";
-                    user.Telefone = "(31) 3300-0000";
-
-                    if (user.Login == "admin")
+                    if (user.RoleId == (int)RolesEnum.Administrador)
                     {
-                        user.RoleId = 1;
-                        usuarioLogadoService.SetUsuarioLogado(user);
                         await navigationService.NavigateAsync("MenuPage");
                     }
-                    if (user.Login == "mecanico")
+                    if (user.RoleId == (int)RolesEnum.Mecanico)
                     {
-                        user.RoleId = 2;
-                        usuarioLogadoService.SetUsuarioLogado(user);
                         await navigationService.NavigateAsync("MenuMecanicoPage");
                     }
-                    if (user.Login == "cliente")
+                    if (user.RoleId == (int)RolesEnum.Cliente)
                     {
-                        user.RoleId = 3;
-                        usuarioLogadoService.SetUsuarioLogado(user);
                         await navigationService.NavigateAsync("MenuClientePage");
                     }
-
-                    //if (user.RoleId == (int)RolesEnum.Administrador)
-                    //{
-                    //    await navigationService.NavigateAsync("MenuPage");
-                    //}
-                    //if (user.RoleId == (int)RolesEnum.Mecanico)
-                    //{
-                    //    await navigationService.NavigateAsync("MenuMecanicoPage");
-                    //}
-                    //if (user.RoleId == (int)RolesEnum.Cliente)
-                    //{
-                    //    await navigationService.NavigateAsync("MenuClientePage");
-                    //}
                 }
                 catch (Exception ex)
                 {
                     await navigationService.NavigateAsync("LoginPage");
                 }
             });
-
-            //MenuPageCommand = new Command(async () =>
-            //{
-            //    var usuario = new Perfil() { Login = Usuario, Senha = Senha };
-
-            //    try
-            //    {
-            //        var user = PerfilService.Logar(usuario).Result;
-
-            //            usuarioLogadoService.SetUsuarioLogado(user);
-
-            //        if (user.RoleId == (int)RolesEnum.Administrador)
-            //        {
-            //            await navigationService.NavigateAsync("MenuPage");
-            //        }
-            //        if (user.RoleId == (int)RolesEnum.Mecanico)
-            //        {
-            //            await navigationService.NavigateAsync("MenuMecanicoPage");
-            //        }
-            //        if (user.RoleId == (int)RolesEnum.Cliente)
-            //        {
-            //            await navigationService.NavigateAsync("MenuClientePage");
-            //        }
-            //    }
-            //    catch(Exception ex)
-            //    {
-            //        await navigationService.NavigateAsync("LoginPage");
-            //    }
-            //});
         }
 
         public Command MenuPageCommand { get; }
