@@ -15,7 +15,7 @@
         <StackLayout Orientation="Vertical">
             <Image Source="logo" WidthRequest="250"></Image>
 
-            <Entry Text="{Binding Usuario}"  Placeholder="Usuário" TextColor="Black" ></Entry>
+            <Entry Text="{Binding Usuario}"  Placeholder="Usuário" TextColor="Black" Margin="30,0"></Entry>
 
             <Entry Text="{Binding Senha}"  Placeholder="Senha" TextColor="Black" IsPassword="True" Margin="30,0"></Entry>
 

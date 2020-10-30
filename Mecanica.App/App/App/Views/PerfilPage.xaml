@@ -20,10 +20,8 @@
                 </StackLayout>
             </StackLayout>
 
-
             <Label Text="{Binding Usuario.Nome}" Margin="30,0,30,0" FontSize="18" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
             <Label Text="{Binding Usuario.Telefone, StringFormat='Telefone: {0}'}" Margin="30,0,30,0" FontSize="18" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
-
             <Label Text="{Binding Usuario.Login, StringFormat='Login: {0}'}" FontSize="18" Margin="30,0,30,0" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
 
         </StackLayout>

@@ -6,20 +6,12 @@
              x:Class="App.Views.MenuPage"
              Title="{Binding Title}">
 
-    
-        
-   
-        <ContentPage.ToolbarItems>
-        <ToolbarItem Name="Meu Perfil" Command="{Binding PerfilCommand}" IconImageSource="user3" ></ToolbarItem>
-        </ContentPage.ToolbarItems>
-   
-
     <StackLayout>
         <ScrollView Padding="1,6,1,1">
-            
-            
+
+
             <Grid x:Name="MainGrid" Padding="50,0,50,0">
-                
+
                 <Grid.RowDefinitions >
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -30,7 +22,7 @@
                 </Grid.ColumnDefinitions>
 
 
-                
+
                 <Button Text="Cadastrar Usuário"
             x:Name="btn1"
             VerticalOptions="CenterAndExpand"
@@ -126,35 +118,21 @@
             TextColor="White"
             Command="{Binding AcompanhamentoTipoDeServicoCommand}"/>
 
-                <!-- Menu de Cliente/Usuário -->
-
-                <Button Text="Meus Veiculus"
-             x:Name="btn9"
+                <Button Text="Manutenções ativas"
+            x:Name="btn9"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
-                    WidthRequest="{Binding Width, Source={x:Reference btn1}}"
             HeightRequest="{Binding Width, Source={x:Reference btn9}}"
             Grid.Row="4"
             Grid.Column="0"
-                        BackgroundColor="#306ee3"
+            BackgroundColor="#2296f3"
             TextColor="White"
-            Command="{Binding MeusVeiculosCommand}"/>
-
-                <Button Text="Minhas Manutenções"
-             x:Name="btn10"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center"
-                    WidthRequest="{Binding Width, Source={x:Reference btn1}}"
-            HeightRequest="{Binding Width, Source={x:Reference btn10}}"
-            Grid.Row="4"
-            Grid.Column="1"
-                        BackgroundColor="#306ee3"
-            TextColor="White"
-            Command="{Binding MinhasManutencoesCommand}"/>
+            Command="{Binding AcompanhamentoPedidosAtuaisCommand}"/>
 
             </Grid>
         </ScrollView>
-       
+
     </StackLayout>
+
 
 </ContentPage>
