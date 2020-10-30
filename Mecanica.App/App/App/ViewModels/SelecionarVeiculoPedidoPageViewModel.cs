@@ -14,7 +14,7 @@ namespace App.ViewModels
     {
         public SelecionarVeiculoPedidoPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Title = "Selecionar veículo";
+            Title = "Veículos";
 
             Veiculos = new List<Veiculo>();
             Veiculos.Add(new Veiculo() { Id = 1, Nome = "Nome", Ano = 2000, Especificacao = "Especificação", Kilometragem = 1000, Marca = "Marca", Modelo = "Modelo", PerfilId = 1, Placa = "Placa" });

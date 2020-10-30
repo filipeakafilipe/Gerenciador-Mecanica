@@ -13,14 +13,17 @@
 
             <Label Text="Neymar Júnior" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" ></Label>
             <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
-                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Start" VerticalOptions="Center" >
                     <Label x:Name="BServicos" FontSize="20" Text="Serviços" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" ></Label>
+                    <Label x:Name="NumServicos" FontSize="15" Text="2" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" ></Label>
                 </StackLayout>
-                <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="End" VerticalOptions="Center" Padding="25,0,0,0">
                     <Label x:Name="BVeiculos" FontSize="20"  Text="Veículos" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" ></Label>
+                    <Label x:Name="NumVeiculos" FontSize="15" Text="3" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" ></Label>
                 </StackLayout>
-            </StackLayout>
 
+            </StackLayout>
+            <Label x:Name="BarraDivisao" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="#2296f3" TextColor="White" ></Label>
 
             <Label Text="Nome" Margin="30,0,30,0" FontSize="18" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"></Label>
             <Entry x:Name="txtNome" Margin="30,0,30,0" Placeholder="Neymar da Silva Santos Júnior" TextColor="Black" FontSize="18"></Entry>

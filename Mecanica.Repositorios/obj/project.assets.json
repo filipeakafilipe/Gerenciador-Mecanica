@@ -5646,23 +5646,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\knari\\.nuget\\packages\\": {},
+    "C:\\Users\\danie\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\knari\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
+      "projectUniqueName": "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
       "projectName": "Mecanica.Repositorios",
-      "projectPath": "C:\\Users\\knari\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
-      "packagesPath": "C:\\Users\\knari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\knari\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Repositorios\\obj\\",
+      "projectPath": "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
+      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Repositorios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\knari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5676,8 +5676,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\knari\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
-              "projectPath": "C:\\Users\\knari\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
+            "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
+              "projectPath": "C:\\Users\\danie\\Source\\Repos\\Grupo 7 - LDSI\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
             }
           }
         }
@@ -5705,7 +5705,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

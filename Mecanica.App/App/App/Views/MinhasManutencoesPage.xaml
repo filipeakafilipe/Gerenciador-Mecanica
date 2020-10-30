@@ -9,7 +9,7 @@
     <ScrollView>
         <StackLayout Orientation="Vertical">
 
-            <Label Text="Manutenções de Neymar Jr" FontSize="25" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="30,0,30,0" TextColor="Black"></Label>
+            <Label Text="Manutenções de Neymar Júnior" FontSize="25" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="30,0,30,0" TextColor="Black"></Label>
             <Label x:Name="Veiculos" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="LightGray" TextColor="White" ></Label>
             <Label x:Name="Veiculos2" FontSize="20" HorizontalTextAlignment="Center" Text="2 Manutenções Cadastradas" HorizontalOptions="Fill"  TextColor="Black"></Label>
             <Label x:Name="Veiculos3" FontSize="5" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="#2296f3" TextColor="White" ></Label>
