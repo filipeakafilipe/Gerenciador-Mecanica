@@ -7,9 +7,10 @@ using System.Text;
 
 namespace App.Services
 {
-    public static class Base
+    public class Base
     {
-        //public static string Uri = "10.0.2.2:44353/";
-        public static string Uri = "https://192.168.15.27:45456/";
+        public static string Uri = "http://192.168.15.27:5000/";
+        //public static string Uri = "http://10.0.2.2:5000/";
+        //public static readonly string Uri = "https://192.168.15.27:45456/";
     }
 }

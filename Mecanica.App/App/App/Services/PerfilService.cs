@@ -53,7 +53,9 @@ namespace App.Services
         {
             try
             {
-                var result = $"{Base.Uri}api/perfil/logar/{perfil.Login}/{perfil.Senha}".GetJsonAsync<Perfil>().Result;
+                string url = $"{Base.Uri}api/perfil/logar/{perfil.Login}/{perfil.Senha}";
+
+                var result = url.GetJsonAsync<Perfil>().Result;
 
                 return result;
             }

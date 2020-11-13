@@ -7,6 +7,7 @@ using Xamarin.Essentials.Implementation;
 using Xamarin.Forms;
 using App.Modelos;
 using App.Services;
+using Flurl.Http;
 
 namespace App
 {
@@ -59,6 +60,11 @@ namespace App
             containerRegistry.RegisterForNavigation<MenuMecanicoPage, MenuMecanicoPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuClientePage, MenuClientePageViewModel>();
             containerRegistry.RegisterForNavigation<AcompanhamentoPedidosAtuaisPage, AcompanhamentoPedidosAtuaisPageViewModel>();
+
+            //FlurlHttp.ConfigureClient($"{Base.Uri}", cli => cli.Settings.HttpClientFactory = new UntrustedCertClientFactory());
+            //FlurlHttp.Configure(settings => {
+            //    settings.HttpClientFactory = new UntrustedCertClientFactory();
+            //});
         }
     }
 }
