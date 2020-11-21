@@ -27,7 +27,7 @@
                         FontSize="18"
                         Margin="30,0,30,0"
                         Placeholder="Observações"
-                        Text="{Binding Observações}"/>
+                        Text="{Binding Observacoes}"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="3"
                         Margin="30,0,30,0"
                         Text="Salvar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding AlterarCommand}"/>

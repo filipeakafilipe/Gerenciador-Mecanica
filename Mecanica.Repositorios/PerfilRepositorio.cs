@@ -15,12 +15,12 @@ namespace Mecanica.Repositorios
 
         public Perfil Get(int id)
         {
-            return db.Perfils.Where(v => v.Id == id).AsNoTracking().FirstOrDefault();
+            return db.Perfils.Where(v => v.Id == id).FirstOrDefault();
         }
 
         public Perfil Get(string login)
         {
-            return db.Perfils.Where(v => v.Login == login).AsNoTracking().FirstOrDefault();
+            return db.Perfils.Where(v => v.Login == login).FirstOrDefault();
         }
 
         public void Adicionar(Perfil perfil)

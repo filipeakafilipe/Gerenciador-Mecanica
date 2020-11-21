@@ -40,7 +40,7 @@
                 <Entry Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="3"
                         Placeholder="Especificação"
                        FontSize="18"
-                        Text="{Binding Especificação}"
+                        Text="{Binding Especificacao}"
                        BackgroundColor="#e9eeed"
                         Margin="30,0,30,0"
                        />

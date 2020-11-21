@@ -42,7 +42,7 @@ namespace App.Services
             {
                 await $"{Base.Uri}api/perfil/".PutJsonAsync(perfil);
             }
-            catch
+            catch(Exception ex)
             {
                 throw new Exception();
             }

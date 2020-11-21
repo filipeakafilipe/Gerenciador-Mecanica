@@ -36,7 +36,7 @@
                         FontSize="18"
                         Margin="30,0,30,0"
                         Placeholder="Especificação"
-                        Text="{Binding Especificação}"/>
+                        Text="{Binding Especificacao}"/>
                 <Entry Grid.Column="0" Grid.ColumnSpan="1" Grid.Row ="4"
                         FontSize="18"
                         Margin="30,0,30,0"

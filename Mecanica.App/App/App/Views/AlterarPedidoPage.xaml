@@ -44,7 +44,7 @@
                         FontSize="18"
                         Margin="30,0,30,0"
                         Placeholder="Valor peças"
-                        Text="{Binding ValorPeças}"/>
+                        Text="{Binding ValorPecas}"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5"
                         Margin="30,0,30,0"
                         Text="Alterar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding AlterarCommand}"/>
