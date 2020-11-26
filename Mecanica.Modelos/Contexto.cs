@@ -19,9 +19,11 @@ namespace Mecanica.Modelos
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var settings = JsonSerializer.Deserialize<Connection>(File.ReadAllText("connectionstrings.json"));
+            optionsBuilder.UseSqlServer(@"Data Source=tcp:mecanicaapidbserver.database.windows.net,1433;Initial Catalog=Mecanica.API_db;User Id=Madmin@mecanicaapidbserver;Password=Admin@mecanica");
 
-            optionsBuilder.UseSqlServer(settings.DefaultConnection);
+            //var settings = JsonSerializer.Deserialize<Connection>(File.ReadAllText("connectionstrings.json"));
+
+           // optionsBuilder.UseSqlServer(settings.DefaultConnection);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
