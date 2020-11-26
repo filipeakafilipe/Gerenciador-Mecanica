@@ -19,11 +19,12 @@ namespace Mecanica.Modelos
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=tcp:mecanicaapidbserver.database.windows.net,1433;Initial Catalog=Mecanica.API_db;User Id=Madmin@mecanicaapidbserver;Password=Admin@mecanica");
+            optionsBuilder.UseSqlServer(@"Data Source=(localDB)\MSSQLLocalDB;Initial Catalog=Mecanica;Integrated Security=True;");
+            //optionsBuilder.UseSqlServer(@"Data Source=tcp:mecanicaapidbserver.database.windows.net,1433;Initial Catalog=Mecanica.API_db;User Id=Madmin@mecanicaapidbserver;Password=Admin@mecanica");
 
             //var settings = JsonSerializer.Deserialize<Connection>(File.ReadAllText("connectionstrings.json"));
 
-           // optionsBuilder.UseSqlServer(settings.DefaultConnection);
+            // optionsBuilder.UseSqlServer(settings.DefaultConnection);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
