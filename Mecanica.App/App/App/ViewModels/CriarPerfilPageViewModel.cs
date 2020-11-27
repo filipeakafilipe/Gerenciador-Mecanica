@@ -21,6 +21,9 @@ namespace App.ViewModels
 
             CadastrarCommand = new Command(async () =>
             {
+
+                
+                
                 if (Senha == SenhaConfirmada)
                 {
                     var perfil = new Perfil()
@@ -36,6 +39,7 @@ namespace App.ViewModels
                     {
                         await PerfilService.Cadastrar(perfil);
                         CrossToastPopUp.Current.ShowToastSuccess("Cadastrado com sucesso");
+                       
                     }
                     catch
                     {
