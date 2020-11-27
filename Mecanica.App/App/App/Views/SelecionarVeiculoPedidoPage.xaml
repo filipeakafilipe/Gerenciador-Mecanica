@@ -36,10 +36,16 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Row="1" Grid.Column="1"
-                                       Text="{Binding Nome}"/>
-                                <Label Grid.Row="1" Grid.Column="2"
-                                       Text="{Binding Placa}"/>
+                                <Label Grid.Column="0" Grid.Row="1" Text="Veículo:" TextColor="#2296f3" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Grid.Row="1"
+                                       Text="{Binding Nome}" TextColor="Black"/>
+
+                                <Label Grid.Column="0" Grid.Row="2" Text="Placa:" TextColor="#2296f3" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Grid.Row="2"
+                                       Text="{Binding Placa}" TextColor="Black"/>
+
+                                <Label Grid.Column="0" x:Name="barra3" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="Gray" TextColor="White" ></Label>
+
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

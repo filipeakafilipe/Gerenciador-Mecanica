@@ -34,10 +34,16 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0"
-                                       Text="{Binding Nome}"/>
-                                <Label Grid.Column="1"
-                                       Text="{Binding Login}"/>
+                                <Label Grid.Column="0" Grid.Row="1" Text="Nome:" TextColor="#2296f3" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Grid.Row="1"
+                                       Text="{Binding Nome}" TextColor="Black"/>
+
+                                <Label Grid.Column="0" Grid.Row="2" Text="User:" TextColor="#2296f3" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Grid.Row="2"
+                                       Text="{Binding Login}" TextColor="Black"/>
+
+                                <Label Grid.Column="0" x:Name="barra3" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="Gray" TextColor="White" ></Label>
+
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

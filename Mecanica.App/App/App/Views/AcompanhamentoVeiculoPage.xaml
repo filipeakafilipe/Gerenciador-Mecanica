@@ -35,14 +35,28 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Row="1" Grid.Column="1"
-                                       Text="{Binding Perfil.Nome}"/>
-                                <Label Grid.Row="1" Grid.Column="2"
-                                       Text="{Binding Perfil.Login}"/>
-                                <Label Grid.Row="2" Grid.Column="1"
-                                       Text="{Binding Nome}"/>
-                                <Label Grid.Row="2" Grid.Column="2"
-                                       Text="{Binding Placa}"/>
+                                <Label Grid.Column="0" Grid.Row="1" Text="Nome:" TextColor="#2296f3" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Grid.Row="1"
+                                       Text="{Binding Perfil.Nome}" TextColor="Black"/>
+
+                                <Label Grid.Column="0" Grid.Row="2" Text="User:" TextColor="#2296f3" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Grid.Row="2"
+                                       Text="{Binding Perfil.Login}" TextColor="Black"/>
+
+
+                                <Label Grid.Column="0" Grid.Row="3" Text="Veículo:" TextColor="#2296f3" FontAttributes="Bold" />
+
+                                <Label Grid.Column="1" Grid.Row="3"
+                                       Text="{Binding Nome}" TextColor="Black"/>
+
+                                <Label Grid.Column="2" Grid.Row="3" Text="Placa:" TextColor="#2296f3" FontAttributes="Bold" />
+
+                                <Label Grid.Column="3" Grid.Row="3"
+                                       Text="{Binding Placa}" TextColor="Black"/>
+
+
+
+                                <Label Grid.Column="0" x:Name="barra3" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="Gray" TextColor="White" ></Label>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

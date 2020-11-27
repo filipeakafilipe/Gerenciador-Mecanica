@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
+using Plugin.Toast;
 
 namespace App.ViewModels
 {
@@ -27,6 +28,7 @@ namespace App.ViewModels
                 try
                 {
                     await TipoDeServicoService.Cadastrar(tipoDeServico);
+                    CrossToastPopUp.Current.ShowToastSuccess("Cadastrado com sucesso");
                 }
                 catch
                 {

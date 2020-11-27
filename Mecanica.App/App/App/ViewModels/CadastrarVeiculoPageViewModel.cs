@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
+using Plugin.Toast;
 
 namespace App.ViewModels
 {
@@ -18,6 +19,7 @@ namespace App.ViewModels
 
             CadastrarCommand = new Command(async () =>
                 {
+
                     var veiculo = new Veiculo()
                     {
                         PerfilId = Id,
@@ -30,12 +32,16 @@ namespace App.ViewModels
                         Placa = Placa
                     };
 
+
                     try
                     {
+
                         await VeiculoService.Cadastrar(veiculo);
+                        CrossToastPopUp.Current.ShowToastSuccess("Cadastrado com sucesso");
                     }
                     catch
                     {
+                        CrossToastPopUp.Current.ShowToastError("Falha no cadastro");
                         await navigationService.NavigateAsync("MenuPage");
                     }
                 });

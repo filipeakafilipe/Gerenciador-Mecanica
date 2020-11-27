@@ -35,14 +35,29 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Row="1" Grid.Column="1"
-                                       Text="{Binding TipoDeServico.Nome}"/>
-                                <Label Grid.Row="2" Grid.Column="1"
-                                       Text="{Binding SLA}"/>
-                                <Label Grid.Row="3" Grid.Column="1"
-                                       Text="{Binding Veiculo.Nome}"/>
-                                <Label Grid.Row="3" Grid.Column="2"
-                                       Text="{Binding Veiculo.Placa}"/>
+                                <Label Grid.Column="0" Grid.Row="1" Text="Serviço:" TextColor="#2296f3" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Grid.Row="1"
+                                       Text="{Binding TipoDeServico.Nome}" TextColor="Black"/>
+
+                                <Label Grid.Column="0" Grid.Row="2" Text="Status SLA:" TextColor="#2296f3" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Grid.Row="2"
+                                       Text="{Binding SLA}" TextColor="Black"/>
+
+
+                                <Label Grid.Column="0" Grid.Row="3" Text="Veículo:" TextColor="#2296f3" FontAttributes="Bold" />
+
+                                <Label Grid.Column="1" Grid.Row="3"
+                                       Text="{Binding Veiculo.Nome}" TextColor="Black"/>
+
+                                <Label Grid.Column="2" Grid.Row="3" Text="Placa:" TextColor="#2296f3" FontAttributes="Bold" />
+
+                                <Label Grid.Column="3" Grid.Row="3"
+                                       Text="{Binding Veiculo.Placa}" TextColor="Black"/>
+
+
+
+                                <Label Grid.Column="0" x:Name="barra3" FontSize="2" HorizontalTextAlignment="Center" HorizontalOptions="Fill" BackgroundColor="Gray" TextColor="White" ></Label>
+
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
