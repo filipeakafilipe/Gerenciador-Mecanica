@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
+using Plugin.Toast;
 
 namespace App.ViewModels
 {
@@ -28,10 +29,12 @@ namespace App.ViewModels
                 try
                 {
                     await TipoDeServicoService.Alterar(tipoDeServico);
+                    CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
                 }
                 catch
                 {
                     await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastError("Falha na atualização dos dados");
                 }
             });
         }
