@@ -1,4 +1,5 @@
-﻿using App.Modelos;
+﻿using App.Dictionary;
+using App.Modelos;
 using App.Services;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -61,11 +62,11 @@ namespace App.ViewModels
 
         public string ValorPecas { get; set; }
 
-        private Dictionary<int, string> SLAs = new Dictionary<int, string>();
+        private Dictionary<int, string> SLAs = new SLADictionary().Nomes;
 
         public List<KeyValuePair<int, string>> PickerSLAItemList
         {
-            get => new List<KeyValuePair<int, string>>();
+            get => SLAs.ToList();
         }
 
         private KeyValuePair<int, string> _selectedSLAItem;
@@ -79,7 +80,7 @@ namespace App.ViewModels
 
         public List<KeyValuePair<int, string>> PickerItemList
         {
-            get => new List<KeyValuePair<int, string>>();
+            get => new TipoDeServico().PopulaTipos();
         }
 
         private KeyValuePair<int, string> _selectedItem;
