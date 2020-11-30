@@ -48,6 +48,9 @@
                 <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5"
                         Margin="30,0,30,0"
                         Text="Alterar" BackgroundColor="#2296f3" TextColor="White" Command="{Binding AlterarCommand}"/>
+                <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6"
+                        Margin="30,0,30,0"
+                        Text="Deletar" BackgroundColor="Red" TextColor="White" Command="{Binding DeletarCommand}"/>
             </Grid>
 
         </ScrollView>

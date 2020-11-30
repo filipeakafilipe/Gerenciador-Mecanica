@@ -27,20 +27,11 @@ C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Deb
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
@@ -199,3 +190,6 @@ C:\Users\Victor\Source\Repos\Grupo 7 - LDSI2\Mecanica.API\obj\Debug\netcoreapp3.
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI2\Mecanica.API\obj\Debug\netcoreapp3.1\Mecanica.API.xml
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI2\Mecanica.API\obj\Debug\netcoreapp3.1\Mecanica.API.pdb
 C:\Users\Victor\Source\Repos\Grupo 7 - LDSI2\Mecanica.API\obj\Debug\netcoreapp3.1\Mecanica.API.genruntimeconfig.cache
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.APIMECANICA - Web Deploy.json
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\Filipe\Desktop\Etc\PUC_Documentos\Mecanica\Projeto\Mecanica.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

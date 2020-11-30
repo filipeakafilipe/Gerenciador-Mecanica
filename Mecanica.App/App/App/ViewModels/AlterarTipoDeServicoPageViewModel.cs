@@ -29,12 +29,30 @@ namespace App.ViewModels
                 try
                 {
                     await TipoDeServicoService.Alterar(tipoDeServico);
+                    await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
                 }
                 catch
                 {
                     await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastError("Falha na atualização dos dados");
+                }
+            });
+
+            DeletarCommand = new Command(async () =>
+            {
+                var id = Id;
+
+                try
+                {
+                    await TipoDeServicoService.Deletar(id);
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastSuccess("Tipo de serviço deletado com sucesso");
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastError("Falha na deleção do tipo de serviço");
                 }
             });
         }
@@ -71,5 +89,7 @@ namespace App.ViewModels
         }
 
         public Command AlterarCommand { get; }
+
+        public Command DeletarCommand { get; }
     }
 }

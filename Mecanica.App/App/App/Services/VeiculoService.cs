@@ -28,5 +28,17 @@ namespace App.Services
         {
             await $"{Base.Uri}api/veiculo/".PutJsonAsync(veiculo);
         }
+
+        public static async Task Deletar(int id)
+        {
+            try
+            {
+                await $"{Base.Uri}api/veiculo/{id}".DeleteAsync();
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
     }
 }

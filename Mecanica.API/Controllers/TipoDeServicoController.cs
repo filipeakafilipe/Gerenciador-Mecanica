@@ -15,8 +15,6 @@ namespace Mecanica.API.Controllers
     {
         private readonly ITipoDeServicoRepository<TipoDeServico> _context;
 
-        //private TipoDeServicoRepositorio _context;
-
         public TipoDeServicoController(ITipoDeServicoRepository<TipoDeServico> context)
         {
             _context = context;
@@ -33,6 +31,21 @@ namespace Mecanica.API.Controllers
             }
 
             return tipoDeServico;
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult Deletar(int id)
+        {
+            var tipoDeServico = _context.Get(id);
+
+            if (tipoDeServico == null)
+            {
+                return NotFound();
+            }
+
+            _context.Remover(id);
+
+            return Ok();
         }
 
         [HttpPost]

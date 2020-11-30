@@ -33,6 +33,21 @@ namespace Mecanica.API.Controllers
             return veiculo;
         }
 
+        [HttpDelete("{id}")]
+        public ActionResult Deletar(int id)
+        {
+            var veiculo = _context.Get(id);
+
+            if (veiculo == null)
+            {
+                return NotFound();
+            }
+
+            _context.Remover(id);
+
+            return Ok();
+        }
+
         [HttpGet("cliente/{perfilId}")]
         public ActionResult<List<Veiculo>> GetVeiculoCliente(int perfilId)
         {

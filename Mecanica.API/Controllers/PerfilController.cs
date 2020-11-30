@@ -33,6 +33,21 @@ namespace Mecanica.API.Controllers
             return perfil;
         }
 
+        [HttpDelete("{id}")]
+        public ActionResult Deletar(int id)
+        {
+            var perfil = _context.Get(id);
+
+            if (perfil == null)
+            {
+                return NotFound();
+            }
+
+            _context.Remover(id);
+
+            return Ok();
+        }
+
         [HttpGet("todos")]
         public ActionResult<List<Perfil>> GetTodosPerfis()
         {

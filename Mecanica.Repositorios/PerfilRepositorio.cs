@@ -30,15 +30,6 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Remover(int id)
-        {
-            var perfil = db.Perfils.Where(v => v.Id == id).FirstOrDefault();
-
-            db.Perfils.Remove(perfil);
-
-            db.SaveChanges();
-        }
-
         public void Atualizar(int id, Perfil novoPerfil)
         {
             var perfil = Get(id);
@@ -60,12 +51,28 @@ namespace Mecanica.Repositorios
 
         public List<Perfil> GetTodos()
         {
-            return db.Perfils.ToList();
+            return db.Perfils.OrderBy(p => p.Nome).ThenBy(p => p.Login).ToList();
         }
 
         public Perfil Login(string login, string senha)
         {
             return db.Perfils.FirstOrDefault(p => p.Login == login && p.Senha == senha);
+        }
+
+        public void Remover(int id)
+        {
+            var perfil = Get(id);
+
+            if (perfil != null)
+            {
+                db.Perfils.Remove(perfil);
+
+                db.SaveChanges();
+            }
+            else
+            {
+                throw new KeyNotFoundException();
+            }
         }
     }
 }

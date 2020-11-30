@@ -36,12 +36,30 @@ namespace App.ViewModels
                 try
                 {
                     await VeiculoService.Alterar(veiculo);
+                    await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
                 }
                 catch
                 {
                     await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastError("Falha na atualização dos dados");
+                }
+            });
+
+            DeletarCommand = new Command(async () =>
+            {
+                var id = Id;
+
+                try
+                {
+                    await VeiculoService.Deletar(id);
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastSuccess("Veículo deletado com sucesso");
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastError("Falha na deleção do veículo");
                 }
             });
         }
@@ -60,6 +78,8 @@ namespace App.ViewModels
         }
 
         public Command AlterarCommand { get; }
+
+        public Command DeletarCommand { get; }
 
         private int _Id;
 

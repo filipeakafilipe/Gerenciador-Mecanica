@@ -26,15 +26,6 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Remover(int id)
-        {
-            var pedido = db.Pedidos.Where(v => v.Id == id).FirstOrDefault();
-
-            db.Pedidos.Remove(pedido);
-
-            db.SaveChanges();
-        }
-
         public void Atualizar(int id, Pedido novoPedido)
         {
             var pedido = Get(id);
@@ -68,7 +59,7 @@ namespace Mecanica.Repositorios
                     p.Veiculo = veiculos.Where(v => v.Id == p.VeiculoId).FirstOrDefault();
                 });
 
-                return pedidos;
+                return pedidos.OrderBy(p => p.SLA).ThenBy(p => p.TipoDeServicoId).ThenBy(p => (p.ValorMaoDeObra + p.ValorPecas)).ToList();
             }
             catch
             {
@@ -113,6 +104,22 @@ namespace Mecanica.Repositorios
             catch
             {
                 return null;
+            }
+        }
+
+        public void Remover(int id)
+        {
+            var pedido = Get(id);
+
+            if (pedido != null)
+            {
+                db.Pedidos.Remove(pedido);
+
+                db.SaveChanges();
+            }
+            else
+            {
+                throw new KeyNotFoundException();
             }
         }
     }

@@ -45,6 +45,18 @@ namespace App.Services
             }
         }
 
+        public static async Task Deletar(int id)
+        {
+            try
+            {
+                await $"{Base.Uri}api/pedido/{id}".DeleteAsync();
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
+
         public static Task<List<Pedido>> GetPedidosDoCliente(int idCliente)
         {
             try

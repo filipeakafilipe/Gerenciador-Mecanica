@@ -38,6 +38,7 @@ namespace App.ViewModels
                     try
                     {
                         await PerfilService.Cadastrar(perfil);
+                        await navigationService.NavigateAsync("MenuPage");
                         CrossToastPopUp.Current.ShowToastSuccess("Cadastrado com sucesso");
                        
                     }

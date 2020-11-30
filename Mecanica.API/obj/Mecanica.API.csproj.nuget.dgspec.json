@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.API\\Mecanica.API.csproj": {}
+    "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.API\\Mecanica.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.API\\Mecanica.API.csproj": {
+    "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.API\\Mecanica.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.API\\Mecanica.API.csproj",
+        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.API\\Mecanica.API.csproj",
         "projectName": "Mecanica.API",
-        "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.API\\Mecanica.API.csproj",
-        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.API\\obj\\",
+        "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.API\\Mecanica.API.csproj",
+        "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,11 +32,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
-                "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
+              "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
+                "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
               },
-              "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj": {
-                "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj"
+              "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj": {
+                "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj"
               }
             }
           }
@@ -90,24 +91,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
+    "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
         "projectName": "Mecanica.Modelos",
-        "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
-        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\obj\\",
+        "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj",
+        "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -162,24 +164,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj": {
+    "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
+        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
         "projectName": "Mecanica.Repositorios",
-        "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
-        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Repositorios\\obj\\",
+        "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Repositorios\\Mecanica.Repositorios.csproj",
+        "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Repositorios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -193,8 +196,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
-                "projectPath": "C:\\Users\\Victor\\Source\\Repos\\Grupo 7 - LDSI2\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
+              "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj": {
+                "projectPath": "C:\\Users\\Filipe\\Desktop\\Etc\\PUC_Documentos\\Mecanica\\Projeto\\Mecanica.Modelos\\Mecanica.Modelos.csproj"
               }
             }
           }
@@ -222,7 +225,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

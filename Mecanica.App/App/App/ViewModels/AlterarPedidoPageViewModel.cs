@@ -33,6 +33,7 @@ namespace App.ViewModels
                 try
                 {
                     await PedidoService.Alterar(pedido);
+                    await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
 
                 }
@@ -40,6 +41,23 @@ namespace App.ViewModels
                 {
                     await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastError("Falha na atualização dos dados");
+                }
+            });
+
+            DeletarCommand = new Command(async () =>
+            {
+                var id = Id;
+
+                try
+                {
+                    await PedidoService.Deletar(id);
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastSuccess("Pedido deletado com sucesso");
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastError("Falha na deleção do pedido");
                 }
             });
         }
@@ -92,6 +110,8 @@ namespace App.ViewModels
         }
 
         public Command AlterarCommand { get; }
+
+        public Command DeletarCommand { get; }
 
         private Dictionary<int, string> SLAs = new SLADictionary().Nomes;
 

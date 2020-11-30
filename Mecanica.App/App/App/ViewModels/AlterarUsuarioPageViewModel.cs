@@ -36,6 +36,7 @@ namespace App.ViewModels
                     try
                     {
                         await PerfilService.Alterar(perfil);
+                        await navigationService.NavigateAsync("MenuPage");
                         CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
                     }
                     catch
@@ -43,6 +44,23 @@ namespace App.ViewModels
                         await navigationService.NavigateAsync("MenuPage");
                         CrossToastPopUp.Current.ShowToastError("Falha na atualização dos dados");
                     }
+                }
+            });
+
+            DeletarCommand = new Command(async () =>
+            {
+                var id = Id;
+
+                try
+                {
+                    await PerfilService.Deletar(id);
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastSuccess("Perfil deletado com sucesso");
+                }
+                catch
+                {
+                    await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastError("Falha na deleção do perfil");
                 }
             });
         }
@@ -111,6 +129,8 @@ namespace App.ViewModels
         private Dictionary<int, string> Roles = new RoleDictionary().Nomes;
 
         public Command AlterarCommand { get; }
+
+        public Command DeletarCommand { get; }
 
         public List<KeyValuePair<int, string>> PickerItemList
         {

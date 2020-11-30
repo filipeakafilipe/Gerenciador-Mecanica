@@ -33,6 +33,21 @@ namespace Mecanica.API.Controllers
             return pedido;
         }
 
+        [HttpDelete("{id}")]
+        public ActionResult Deletar(int id)
+        {
+            var pedido = _context.Get(id);
+
+            if (pedido == null)
+            {
+                return NotFound();
+            }
+
+            _context.Remover(id);
+
+            return Ok();
+        }
+
 
         [HttpPost]
         public ActionResult<Perfil> CriarPerfil(Pedido pedido)

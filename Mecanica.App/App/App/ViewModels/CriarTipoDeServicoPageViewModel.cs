@@ -28,11 +28,13 @@ namespace App.ViewModels
                 try
                 {
                     await TipoDeServicoService.Cadastrar(tipoDeServico);
+                    await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastSuccess("Cadastrado com sucesso");
                 }
                 catch
                 {
                     await navigationService.NavigateAsync("MenuPage");
+                    CrossToastPopUp.Current.ShowToastError("Falha no cadastro");
                 }
             });
         }

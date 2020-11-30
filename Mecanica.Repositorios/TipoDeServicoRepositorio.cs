@@ -25,15 +25,6 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Remover(int id)
-        {
-            var tipoDeServico = db.TipoDeServicos.Where(v => v.Id == id).FirstOrDefault();
-
-            db.TipoDeServicos.Remove(tipoDeServico);
-
-            db.SaveChanges();
-        }
-
         public void Atualizar(int id, TipoDeServico novoTipoDeServico)
         {
             var tipoDeServico = Get(id);
@@ -51,7 +42,23 @@ namespace Mecanica.Repositorios
 
         public List<TipoDeServico> GetTodos()
         {
-            return db.TipoDeServicos.ToList();
+            return db.TipoDeServicos.OrderBy(t => t.Nome).ToList();
+        }
+
+        public void Remover(int id)
+        {
+            var tipoDeServico = Get(id);
+
+            if (tipoDeServico != null)
+            {
+                db.TipoDeServicos.Remove(tipoDeServico);
+
+                db.SaveChanges();
+            }
+            else
+            {
+                throw new KeyNotFoundException();
+            }
         }
     }
 }

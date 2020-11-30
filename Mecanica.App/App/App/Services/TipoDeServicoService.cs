@@ -46,5 +46,17 @@ namespace App.Services
                 throw new Exception();
             }
         }
+
+        public static async Task Deletar(int id)
+        {
+            try
+            {
+                await $"{Base.Uri}api/tipodeservico/{id}".DeleteAsync();
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
     }
 }

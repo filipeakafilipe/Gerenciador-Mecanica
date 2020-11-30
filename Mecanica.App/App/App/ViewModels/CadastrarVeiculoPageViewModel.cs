@@ -37,6 +37,7 @@ namespace App.ViewModels
                     {
 
                         await VeiculoService.Cadastrar(veiculo);
+                        await navigationService.NavigateAsync("MenuPage");
                         CrossToastPopUp.Current.ShowToastSuccess("Cadastrado com sucesso");
                     }
                     catch

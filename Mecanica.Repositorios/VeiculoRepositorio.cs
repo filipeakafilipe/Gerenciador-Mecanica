@@ -24,15 +24,6 @@ namespace Mecanica.Repositorios
             db.SaveChanges();
         }
 
-        public void Remover(int id)
-        {
-            var veiculo = db.Veiculos.Where(v => v.Id == id).FirstOrDefault();
-
-            db.Veiculos.Remove(veiculo);
-
-            db.SaveChanges();
-        }
-
         public void Atualizar(int id, Veiculo novoVeiculo)
         {
             var veiculo = Get(id);
@@ -64,12 +55,28 @@ namespace Mecanica.Repositorios
                 v.Perfil = perfis.Where(p => p.Id == v.PerfilId).FirstOrDefault();
             });
 
-            return veiculos;
+            return veiculos.OrderBy(v => v.Placa).ThenBy(v => v.Nome).ThenBy(v => v.Marca).ThenBy(v => v.Modelo).ThenBy(v => v.PerfilId).ToList();
         }
 
         public List<Veiculo> GetVeiculoCliente(int perfilId)
         {
             return db.Veiculos.Where(v => v.PerfilId == perfilId).ToList();
+        }
+
+        public void Remover(int id)
+        {
+            var veiculo = Get(id);
+
+            if (veiculo != null)
+            {
+                db.Veiculos.Remove(veiculo);
+
+                db.SaveChanges();
+            }
+            else
+            {
+                throw new KeyNotFoundException();
+            }
         }
     }
 }
