@@ -30,7 +30,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn1}}"
             Grid.Row="0"
             Grid.Column="0"
-            BackgroundColor="#2296f3"
+            BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding CriarPerfilCommand}"/>
 
@@ -42,7 +42,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn2}}"
             Grid.Row="0"
             Grid.Column="1"
-            BackgroundColor="#2296f3"
+            BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding AcompanhamentoPerfilCommand}"/>
 
@@ -54,7 +54,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn3}}"
             Grid.Row="1"
             Grid.Column="0"
-                        BackgroundColor="#2296f3"
+                        BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding SelecionarUsuarioVeiculoCommand}"/>
 
@@ -66,7 +66,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn4}}"
             Grid.Row="1"
             Grid.Column="1"
-                        BackgroundColor="#2296f3"
+                        BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding AcompanhamentoVeiculoCommand}"/>
 
@@ -78,7 +78,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn5}}"
             Grid.Row="2"
             Grid.Column="0"
-                        BackgroundColor="#2296f3"
+                        BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding SelecionarUsuarioPedidoCommand}"/>
 
@@ -90,7 +90,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn6}}"
             Grid.Row="2"
             Grid.Column="1"
-                        BackgroundColor="#2296f3"
+                        BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding AcompanhamentoPedidoCommand}"/>
 
@@ -102,7 +102,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn7}}"
             Grid.Row="3"
             Grid.Column="0"
-                        BackgroundColor="#2296f3"
+                        BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding CriarTipoDeServicoCommand}"/>
 
@@ -114,7 +114,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn8}}"
             Grid.Row="3"
             Grid.Column="1"
-                        BackgroundColor="#2296f3"
+                        BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding AcompanhamentoTipoDeServicoCommand}"/>
 
@@ -125,7 +125,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn9}}"
             Grid.Row="4"
             Grid.Column="0"
-            BackgroundColor="#2296f3"
+            BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding AcompanhamentoPedidosAtuaisCommand}"/>
 

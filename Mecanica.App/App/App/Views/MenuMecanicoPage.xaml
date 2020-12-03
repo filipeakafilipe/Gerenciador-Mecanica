@@ -30,7 +30,7 @@
             HeightRequest="{Binding Width, Source={x:Reference btn1}}"
             Grid.Row="0"
             Grid.Column="0"
-            BackgroundColor="#2296f3"
+            BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding AcompanhamentoPedidosAtuaisCommand}"/>
 
