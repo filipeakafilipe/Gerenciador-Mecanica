@@ -15,11 +15,12 @@ namespace App.Services
             {
                 await $"{Base.Uri}api/pedido".PostJsonAsync(pedido);
             }
-            catch
+            catch(Exception ex)
             {
                 throw new Exception();
             }
         }
+
 
         public static Task<List<Pedido>> GetPedidos()
         {

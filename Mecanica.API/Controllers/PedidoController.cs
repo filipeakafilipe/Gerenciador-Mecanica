@@ -50,7 +50,7 @@ namespace Mecanica.API.Controllers
 
 
         [HttpPost]
-        public ActionResult<Perfil> CriarPerfil(Pedido pedido)
+        public ActionResult<Pedido> CriarPedido(Pedido pedido)
         {
             try
             {

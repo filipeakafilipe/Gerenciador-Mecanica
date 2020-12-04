@@ -26,6 +26,8 @@ namespace App.ViewModels
                 double valorMaoDeObra = double.Parse(ValorMaoDeObra);
                 double valorPecas = double.Parse(ValorPecas);
 
+                var a = SelectedItem.Key;
+
                 var pedido = new Pedido()
                 {
                     TipoDeServicoId = SelectedItem.Key,
@@ -41,7 +43,7 @@ namespace App.ViewModels
                     await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastSuccess("Cadastrado com sucesso");
                 }
-                catch
+                catch(Exception ex)
                 {
                     await navigationService.NavigateAsync("MenuPage");
                     CrossToastPopUp.Current.ShowToastError("Falha no cadastro");

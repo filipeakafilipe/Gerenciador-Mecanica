@@ -10,8 +10,8 @@ namespace App.Services
     public class Base
     {
         // Local: Utilizar seu IP configurado em Mecanica.API.Properties.launchSettings, em "Mecanica.API" > "applicationUrl"
-        //public static string Uri = "http://192.168.15.27:5000/";
+        public static string Uri = "http://192.168.15.27:5000/";
 
-        public static string Uri = "https://apimecanica.azurewebsites.net/";
+        //public static string Uri = "https://apimecanica.azurewebsites.net/";
     }
 }

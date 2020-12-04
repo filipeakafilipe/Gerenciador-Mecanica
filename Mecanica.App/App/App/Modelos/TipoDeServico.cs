@@ -19,15 +19,11 @@ namespace App.Modelos
         {
             var listTipos = new List<KeyValuePair<int, string>>();
 
-            var id = 0;
-
             var tipos = TipoDeServicoService.GetTipoDeServicos().Result;
 
             foreach(var tipo in tipos)
             {
-                id++;
-
-                listTipos.Add(new KeyValuePair<int, string>(id, tipo.Nome));
+                listTipos.Add(new KeyValuePair<int, string>(tipo.Id, tipo.Nome));
             }
 
             return listTipos;
