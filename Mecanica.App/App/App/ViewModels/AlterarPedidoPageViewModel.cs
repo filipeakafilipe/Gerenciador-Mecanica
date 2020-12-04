@@ -9,15 +9,18 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using Plugin.Toast;
+using App.Enum;
 
 namespace App.ViewModels
 {
     public class AlterarPedidoPageViewModel : ViewModelBase
     {
-        public AlterarPedidoPageViewModel(INavigationService navigationService) : base(navigationService)
+        public AlterarPedidoPageViewModel(INavigationService navigationService, UsuarioLogadoService usuarioLogadoService) : base(navigationService)
         {
             Title = "Alterar Pedido";
 
+            Usuario = usuarioLogadoService.GetUsuarioLogado();
+            
             AlterarCommand = new Command(async () =>
             {
                 var pedido = new Pedido()
@@ -32,14 +35,30 @@ namespace App.ViewModels
 
                 try
                 {
-                    await PedidoService.Alterar(pedido);
-                    await navigationService.NavigateAsync("MenuPage");
-                    CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
+                    await PedidoService.Alterar(pedido)
 
+                    if (Usuario.RoleId == (int)RolesEnum.Administrador)
+                    {
+                        navigationService.NavigateAsync("MenuPage");
+                    }
+                    else
+                    {
+                        navigationService.NavigateAsync("MenuMecanicoPage");
+                    }
+
+                    CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
                 }
                 catch
                 {
-                    await navigationService.NavigateAsync("MenuPage");
+                    if (Usuario.RoleId == (int)RolesEnum.Administrador)
+                    {
+                        navigationService.NavigateAsync("MenuPage");
+                    }
+                    else
+                    {
+                        navigationService.NavigateAsync("MenuMecanicoPage");
+                    }
+
                     CrossToastPopUp.Current.ShowToastError("Falha na atualização dos dados");
                 }
             });
@@ -75,6 +94,8 @@ namespace App.ViewModels
             var sla = parameters.GetValue<string>("SLA");
             SelectedSLAItem = PickerSLAItemList.Where(s => s.Value == sla).FirstOrDefault();
         }
+
+        public Perfil Usuario { get; set; }
 
         private int _Id;
 
