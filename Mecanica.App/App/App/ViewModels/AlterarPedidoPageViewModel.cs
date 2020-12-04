@@ -35,7 +35,7 @@ namespace App.ViewModels
 
                 try
                 {
-                    await PedidoService.Alterar(pedido)
+                    await PedidoService.Alterar(pedido);
 
                     if (Usuario.RoleId == (int)RolesEnum.Administrador)
                     {
