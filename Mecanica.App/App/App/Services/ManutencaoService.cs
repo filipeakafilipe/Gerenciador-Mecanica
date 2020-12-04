@@ -55,7 +55,7 @@ namespace App.Services
                     }
                 }
 
-                return manutencoes.OrderBy(m => m.Placa).ThenBy(m => m.Valor).ToList();
+                return manutencoes.ToList();
             }
             catch
             {

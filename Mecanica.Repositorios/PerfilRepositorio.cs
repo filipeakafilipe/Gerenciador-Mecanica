@@ -51,7 +51,7 @@ namespace Mecanica.Repositorios
 
         public List<Perfil> GetTodos()
         {
-            return db.Perfils.OrderBy(p => p.Nome).ThenBy(p => p.Login).ToList();
+            return db.Perfils.ToList();
         }
 
         public Perfil Login(string login, string senha)

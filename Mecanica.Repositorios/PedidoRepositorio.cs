@@ -59,7 +59,7 @@ namespace Mecanica.Repositorios
                     p.Veiculo = veiculos.Where(v => v.Id == p.VeiculoId).FirstOrDefault();
                 });
 
-                return pedidos.OrderBy(p => p.SLA).ThenBy(p => p.TipoDeServicoId).ThenBy(p => (p.ValorMaoDeObra + p.ValorPecas)).ToList();
+                return pedidos.ToList();
             }
             catch
             {
@@ -91,7 +91,7 @@ namespace Mecanica.Repositorios
 
                 var veiculos = db.Veiculos.ToList();
 
-                var pedidos = db.Pedidos.Where(p => p.SLA != Enum.GetName(typeof(SLAEnum), 3)).OrderBy(p => p.SLA).ToList();
+                var pedidos = db.Pedidos.Where(p => p.SLA != Enum.GetName(typeof(SLAEnum), 3)).ToList();
 
                 pedidos.ForEach(p =>
                 {

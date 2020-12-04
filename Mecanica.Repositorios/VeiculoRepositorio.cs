@@ -55,7 +55,7 @@ namespace Mecanica.Repositorios
                 v.Perfil = perfis.Where(p => p.Id == v.PerfilId).FirstOrDefault();
             });
 
-            return veiculos.OrderBy(v => v.Placa).ThenBy(v => v.Nome).ThenBy(v => v.Marca).ThenBy(v => v.Modelo).ThenBy(v => v.PerfilId).ToList();
+            return veiculos.ToList();
         }
 
         public List<Veiculo> GetVeiculoCliente(int perfilId)

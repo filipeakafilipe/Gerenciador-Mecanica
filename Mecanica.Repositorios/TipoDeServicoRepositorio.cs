@@ -42,7 +42,7 @@ namespace Mecanica.Repositorios
 
         public List<TipoDeServico> GetTodos()
         {
-            return db.TipoDeServicos.OrderBy(t => t.Nome).ToList();
+            return db.TipoDeServicos.ToList();
         }
 
         public void Remover(int id)

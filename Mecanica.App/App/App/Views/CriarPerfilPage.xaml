@@ -42,12 +42,15 @@
                     Text="{Binding Telefone}"/>
                 <Entry Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="4" Margin="30,0,30,0"
                     Placeholder="Usuário"
+                       BackgroundColor="#e9eeed"
                     Text="{Binding Usuario}"/>
                 <Entry Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="5" Margin="30,0,30,0"
                     Placeholder="Senha"
+                       BackgroundColor="#e9eeed"
                     Text="{Binding Senha}"/>
                 <Entry Grid.Column="0" Grid.ColumnSpan="2" Grid.Row ="6" Margin="30,0,30,0"
                     Placeholder="Confirme a senha"
+                       BackgroundColor="#e9eeed"
                     Text="{Binding SenhaConfirmada}"/>
                 <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7"
                 Text="Cadastrar"  Margin="30,0,30,0" BackgroundColor="#2296f3" TextColor="White" Command="{Binding CadastrarCommand}"/>
