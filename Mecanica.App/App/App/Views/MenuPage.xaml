@@ -82,26 +82,14 @@
             TextColor="White"
             Command="{Binding SelecionarUsuarioPedidoCommand}"/>
 
-                <Button Text="Alterar Pedido"
-             x:Name="btn6"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center"
-                    WidthRequest="{Binding Width, Source={x:Reference btn1}}"
-            HeightRequest="{Binding Width, Source={x:Reference btn6}}"
-            Grid.Row="2"
-            Grid.Column="1"
-                        BackgroundColor="#306ee3"
-            TextColor="White"
-            Command="{Binding AcompanhamentoPedidoCommand}"/>
-
                 <Button Text="Cadastrar Tipo de Serviço"
              x:Name="btn7"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
                     WidthRequest="{Binding Width, Source={x:Reference btn1}}"
             HeightRequest="{Binding Width, Source={x:Reference btn7}}"
-            Grid.Row="3"
-            Grid.Column="0"
+            Grid.Row="2"
+            Grid.Column="1"
                         BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding CriarTipoDeServicoCommand}"/>
@@ -113,21 +101,10 @@
                     WidthRequest="{Binding Width, Source={x:Reference btn1}}"
             HeightRequest="{Binding Width, Source={x:Reference btn8}}"
             Grid.Row="3"
-            Grid.Column="1"
+            Grid.Column="0"
                         BackgroundColor="#306ee3"
             TextColor="White"
             Command="{Binding AcompanhamentoTipoDeServicoCommand}"/>
-
-                <Button Text="Manutenções ativas"
-            x:Name="btn9"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center"
-            HeightRequest="{Binding Width, Source={x:Reference btn9}}"
-            Grid.Row="4"
-            Grid.Column="0"
-            BackgroundColor="#306ee3"
-            TextColor="White"
-            Command="{Binding AcompanhamentoPedidosAtuaisCommand}"/>
 
             </Grid>
         </ScrollView>

@@ -15,12 +15,10 @@ namespace App.ViewModels
 {
     public class AlterarPedidoPageViewModel : ViewModelBase
     {
-        public AlterarPedidoPageViewModel(INavigationService navigationService, UsuarioLogadoService usuarioLogadoService) : base(navigationService)
+        public AlterarPedidoPageViewModel(INavigationService navigationService) : base(navigationService)
         {
             Title = "Alterar Pedido";
 
-            Usuario = usuarioLogadoService.GetUsuarioLogado();
-            
             AlterarCommand = new Command(async () =>
             {
                 var pedido = new Pedido()
@@ -36,28 +34,13 @@ namespace App.ViewModels
                 try
                 {
                     await PedidoService.Alterar(pedido);
-
-                    if (Usuario.RoleId == (int)RolesEnum.Administrador)
-                    {
-                        navigationService.NavigateAsync("MenuPage");
-                    }
-                    else
-                    {
-                        navigationService.NavigateAsync("MenuMecanicoPage");
-                    }
+                    await navigationService.NavigateAsync("MenuMecanicoPage");
 
                     CrossToastPopUp.Current.ShowToastSuccess("Dados atualizados com sucesso");
                 }
                 catch
                 {
-                    if (Usuario.RoleId == (int)RolesEnum.Administrador)
-                    {
-                        navigationService.NavigateAsync("MenuPage");
-                    }
-                    else
-                    {
-                        navigationService.NavigateAsync("MenuMecanicoPage");
-                    }
+                    await navigationService.NavigateAsync("MenuMecanicoPage");
 
                     CrossToastPopUp.Current.ShowToastError("Falha na atualização dos dados");
                 }

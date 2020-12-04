@@ -40,16 +40,6 @@ namespace App.ViewModels
                 await navigationService.NavigateAsync("SelecionarUsuarioPedidoPage");
             });
 
-            AcompanhamentoPedidoCommand = new Command(async () =>
-            {
-                await navigationService.NavigateAsync("AcompanhamentoPedidoPage");
-            });
-
-            AcompanhamentoPedidosAtuaisCommand = new Command(async () =>
-            {
-                await navigationService.NavigateAsync("AcompanhamentoPedidosAtuaisPage");
-            });
-
             SelecionarUsuarioVeiculoCommand = new Command(async () =>
             {
                 await navigationService.NavigateAsync("SelecionarUsuarioVeiculoPage");

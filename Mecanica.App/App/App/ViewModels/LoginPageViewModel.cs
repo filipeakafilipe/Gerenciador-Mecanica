@@ -15,7 +15,7 @@ namespace App.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
-        public LoginPageViewModel(INavigationService navigationService, IUsuarioLogado usuarioLogadoService) : base(navigationService)
+        public LoginPageViewModel(INavigationService navigationService, UsuarioLogadoService usuarioLogadoService) : base(navigationService)
         {
             Title = "Entrar";
 
@@ -24,9 +24,6 @@ namespace App.ViewModels
             MenuPageCommand = new Command(async () =>
             {
                 var usuario = new Perfil() { Login = Usuario, Senha = Senha };
-
-
-                
 
                 try
                 {
